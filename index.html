@@ -9,6 +9,7 @@
 <body>
     <video loop muted autoplay src="assets/midwayvid.mp4"id="vid"></video>
     <div id="sabaton">
+        <button id="toggle" onClick="togglePlayer()">Hide</button>
             <button onClick='vid()'id="vidclick">Pause Video</button>
             <a href="https://youtu.be/NuOnQpyP1nc">"Midway" by Sabaton</a> <audio controls src="assets/midway.mp3"></audio></div>
     
@@ -73,6 +74,16 @@
     function buttonout2(){
         document.getElementById("top1").style.display = "block";
         document.getElementById("top2").style.display = "none";
+    }
+    function togglePlayer(){
+        if(document.getElementById("toggle").innerHTML=="Hide"){
+        document.getElementById("sabaton").style.transform = "TranslateX(75%)";
+        document.getElementById("toggle").innerHTML="Show";
+        }
+        else{
+            document.getElementById("sabaton").style.transform = "TranslateX(0)";
+            document.getElementById("toggle").innerHTML="Hide";
+        }
     }
     </script>
 </body>
