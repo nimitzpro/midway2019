@@ -20,11 +20,18 @@ video{
     z-index: -1;
     overflow: hidden;
 }
-@media only screen and (max-width:1024px){
+@media only screen and (max-width:768px){
     video{
         height:100%;
         width:auto;
         margin-left:-50%;
+    }
+}
+@media only screen and (max-width:1024px){
+    video{
+        height:100%;
+        width:auto;
+        margin-left:-25%;
     }
 }
 audio{
