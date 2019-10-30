@@ -25,6 +25,7 @@ video{
         height:100%;
         width:auto;
         margin-left:-50%;
+        overflow: hidden;
     }
     body{
         font-size:7.5px;
@@ -35,6 +36,7 @@ video{
         height:100%;
         width:auto;
         margin-left:-25%;
+        overflow: hidden;
     }
     body{
         font-size:11.25px;
