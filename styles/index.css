@@ -10,7 +10,7 @@ body{
     font-family:Trebuchet,sans-serif;
     font-size:15px;
     text-align:center;
-    background-color:white;
+    background-color:black;
 }
 video{
     position:fixed;
@@ -19,6 +19,13 @@ video{
     width:100%;
     z-index: -1;
     overflow: hidden;
+}
+@media only screen and (max-width:1024px){
+    video{
+        height:100%;
+        width:auto;
+        margin-left:-50%;
+    }
 }
 audio{
     filter: sepia(400%) saturate(200%) contrast(400%) hue-rotate(-30deg);
@@ -59,7 +66,7 @@ h2{
 
 header{
     color:rgb(85, 1, 1);
-    margin:33vh 0;
+    margin:33vmin 0;
     padding:0 2em;
     background-color:transparent;
 }
