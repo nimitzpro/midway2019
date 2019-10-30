@@ -1,0 +1,150 @@
+@font-face{
+    font-family:YFury;
+    src:url("../fonts/yfury.ttf");
+}
+@font-face{
+    font-family:JA3017;
+    src:url("../fonts/ja3017.ttf");
+}
+body{
+    font-family:Trebuchet,sans-serif;
+    font-size:15px;
+    text-align:center;
+    background-color:white;
+}
+video{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: -1;
+    overflow: hidden;
+}
+audio{
+    filter: sepia(400%) saturate(200%) contrast(400%) hue-rotate(-30deg);
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size:5em;
+    padding:0.25em;
+    font-family:YFury,sans-serif;
+}
+h2{
+    font-size:2em;
+    padding:0.25em;
+}
+
+#sabaton{
+    position:fixed;
+    right:0;
+    top:0;
+    background-color:rgb(0,0,0);
+    color:white;
+    padding-top:0.5em;
+    border-left:1em solid rgb(0,0,0);
+    border-bottom:1em solid rgb(0,0,0);
+    border-bottom-left-radius: 2em 2em;
+    z-index:2;
+}
+#sabaton a{
+    display:block;
+    color:crimson;
+    padding-bottom:0.5em;
+}
+#sabaton a:hover{
+    text-decoration: underline;
+}
+
+header{
+    color:rgb(85, 1, 1);
+    margin:33vh 0;
+    padding:0 2em;
+    background-color:transparent;
+}
+#hmain{
+    display:inline-block;
+    margin:0 auto;
+    transition: 1s ease;
+    border-radius:3em 0;
+    padding:0 3em;
+}
+#hmain:hover{
+    background-color:rgba(216, 216, 216, 0.55);
+    color:rgb(150, 2, 2);
+}
+#hmain:hover ul a{
+    color:rgb(85, 1, 1);
+}
+#down img,.top img{
+    margin:1em auto;
+    width:3.5em;
+}
+#img1,#top1{
+    display:block;
+    transition: .5s ease;
+}
+#img2,#top2{
+    display:none;
+    transition: .5s ease;
+}
+#top1,#top2{
+    transform: rotate(180deg);
+}
+.top{
+    position:fixed;
+    right:5%;
+    bottom:15%;
+}
+nav ul{
+    font-family: JA3017,sans-serif;
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+}
+ul li a{
+    margin:1em 2em;
+    font-size:2em;
+    color:crimson;
+    transition: .5s ease;
+}
+#hmain nav ul a:hover{
+    color:navy;
+}
+
+main{
+    background-color:rgba(155,155,155,0.75);
+}
+main ul li{
+    list-style-type: square;
+}
+button{
+    cursor:pointer;
+    border:none;
+    color:rgb(300, 4, 4);
+    font-size:1.25em;
+    margin-bottom:0.5em;
+    background-color:black;
+}
+button:hover{
+    text-decoration:underline;
+}
+section{
+    border-bottom:0.2em solid black;
+    padding:2em 0;
+    font-size:1.5em;
+    display:flex;
+    flex-wrap:wrap;
+}
+section h2{
+    flex-basis:100%;
+    color:rgb(81,9,9);
+}
+section p{
+    flex:1;
+}
+section img{
+    flex:1;
+    border:0.2em double;
+}
