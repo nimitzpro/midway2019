@@ -11,16 +11,21 @@ function vid(){
         x = true;
     }
 }
-let img1 = document.getElementById("img1");
-let img2 = document.getElementById("img2");
+let down1 = document.getElementById("down1");
+let down2 = document.getElementById("down2");
 function button(){
-    img1.style.display = "none";
-    img2.style.display = "block";
+    down1.style.display = "none";
+    down2.style.display = "block";
 }
 function buttonout(){
-    img1.style.display = "block";
-    img2.style.display = "none";
+    down1.style.display = "block";
+    down2.style.display = "none";
 }
+function scrollDown() {
+    var main = document.getElementById("main");
+    main.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+
 let top1 = document.getElementById("top1");
 let top2 = document.getElementById("top2");
 function button2(){
@@ -31,6 +36,11 @@ function buttonout2(){
     top1.style.display = "block";
     top2.style.display = "none";
 }
+function scrollUp() {
+    var top = document.getElementById("top");
+    top.scrollIntoView({behavior:'smooth', block:'nearest'});
+  }
+
 let hidden = document.getElementById("hidden");
 let sabaton = document.getElementById("sabaton");
 
