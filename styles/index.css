@@ -250,7 +250,13 @@ section button{
         width:100%;
         flex-basis:80%;
     }
-
+     figure{
+        margin: 2em 0;
+        border-bottom:0.2em solid black;
+    }
+    figcaption{
+        margin:0 0;
+    }
 }
 @media screen and (max-width:1024px){
     video{
@@ -263,7 +269,6 @@ section button{
     }
     section *{
         flex-basis:80%;
-        margin:5vh 1em;
     }
     section:nth-child(2) h2{
         order:0;
@@ -281,6 +286,9 @@ section button{
     }
     ul li{
         flex-basis:100%;
+    }
+    figcaption{
+        margin:0.5em 0;ideo loop muted autoplay src="assets/midwayvid.mp4"id="vid"></video>
     }
 }
 @media screen and (min-width:1138px){
