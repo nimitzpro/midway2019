@@ -19,7 +19,7 @@ video{
     left:0;
     width:100%;
     z-index: -1;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 audio{
@@ -35,7 +35,7 @@ h1{
     text-shadow:none;
     animation : shadowrev 0.5s;
 }
-header:hover h1{
+#hmain:hover h1{
     animation:shadow 0.5s;
     text-shadow: 0.1em 0.1em 0.025em rgba(0,0,0,0.4);
 }
@@ -228,7 +228,7 @@ section button{
     flex-basis:80%;
 }
 
-@media only screen and (max-width:778px){
+@media screen and (max-width:778px){
     body{
         font-size:12px;
     }
@@ -236,7 +236,6 @@ section button{
         height:100%;
         width:auto;
         margin-left:-50%;
-        overflow: hidden;
     }
     header{
         padding: 0 0;
@@ -248,16 +247,16 @@ section button{
         margin:auto 0.1em;
     }
     section img{
-        margin:auto 0;
+        width:100%;
         flex-basis:80%;
     }
+
 }
-@media only screen and (max-width:1024px){
+@media screen and (max-width:1024px){
     video{
         height:100%;
         width:auto;
         margin-left:-25%;
-        overflow: hidden;
     }
     #hmain{
         padding: 0 2em;
@@ -269,18 +268,22 @@ section button{
     section:nth-child(2) h2{
         order:0;
     }
-    ul li a{
-        padding: 0.5rem 0.25rem;
-        margin: 0.5em 0.5em;
+    ul li{
+        margin: 0.25em 0.25em;
     }
 }
-@media only screen and (min-width:1024px) and (max-width:1138px){
-    ul li a{
+@media screen and (max-width:1138px){
+    nav ul li a{
         padding: 0.5rem 0.25rem;
+    }
+    ul li{
         margin: 0.5em 1em;
     }
+    ul li{
+        flex-basis:100%;
+    }
 }
-@media only screen and (min-width:1138px){
+@media screen and (min-width:1138px){
     figure{
         position:relative;
         margin:1em 0;
