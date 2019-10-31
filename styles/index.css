@@ -7,10 +7,11 @@
     src:url("../fonts/ja3017.ttf");
 }
 body{
-    font-family:Trebuchet,sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size:15px;
     text-align:center;
     background-color:black;
+    scroll-behavior: smooth;
 }
 video{
     position:fixed;
@@ -20,28 +21,7 @@ video{
     z-index: -1;
     overflow: hidden;
 }
-@media only screen and (max-width:768px){
-    video{
-        height:100%;
-        width:auto;
-        margin-left:-50%;
-        overflow: hidden;
-    }
-    body{
-        font-size:7.5px;
-    }
-}
-@media only screen and (max-width:1024px){
-    video{
-        height:100%;
-        width:auto;
-        margin-left:-25%;
-        overflow: hidden;
-    }
-    body{
-        font-size:11.25px;
-    }
-}
+
 audio{
     filter: sepia(400%) saturate(200%) contrast(400%) hue-rotate(-30deg);
 }
@@ -73,10 +53,32 @@ h2{
 #sabaton a{
     display:block;
     color:crimson;
-    padding-bottom:0.5em;
+    width:60%;
+    margin: 0 auto 0.5em auto;
 }
 #sabaton a:hover{
     text-decoration: underline;
+}
+@keyframes move{
+    from{transform:translate(0);}
+    to{transform:translate(75);}
+}
+.in{
+    animation : move 1s;
+}
+.out{
+    animation :move 1s reverse;
+}
+
+@keyframes opac {
+    from {opacity:0.2;}
+    to {opacity:1;}
+  }
+.trans{
+    opacity:0.2;
+}
+.trans:hover{
+    animation: opac 1s alternate;
 }
 #toggle{
     display:block;
@@ -139,42 +141,104 @@ nav ul{
     display:flex;
     justify-content: center;
     list-style-type: none;
+    flex-wrap: wrap;
 }
 ul li a{
-    margin:1em 2em;
-    font-size:2em;
+    margin:1em 1.5em;
+    font-size:2.5em;
     color:crimson;
     transition: .5s ease;
 }
 #hmain nav ul a:hover{
     color:navy;
 }
-
-main{
-    background-color:rgba(155,155,155,0.75);
-}
-main ul li{
-    list-style-type: square;
-}
 section{
-    border-bottom:0.2em solid black;
-    padding:2em 0;
+    padding : 20vh 1em;
+    background-color:rgba(170, 170, 170, 0.75);
+    border-top:0.2em double black;
     font-size:1.5em;
     display:flex;
     flex-wrap:wrap;
+    align-items:center;
 }
 section h2{
-    flex-basis:100%;
     color:rgb(81,9,9);
     text-decoration:underline;
     padding-bottom:0.8em;
 }
 section img{
+    margin: 4em 2em 0 2em;
+    height:auto;
     width:auto;
-    height:15em;
     border:0.2em double;
+    flex-basis: 100%;
+}
+section:nth-child(even){
+    background-color:rgba(228, 228, 228, 0.75);
+}
+section:nth-child(even) h2{
+    order:2;
 }
 section *{
-    margin : 0 1em;
-    flex-basis:45%;
+    flex-basis:40%;
+}
+section p *{
+    margin : 0;
+}
+section:nth-last-child(){
+    flex-direction: column;
+}
+section button{
+    background-color:transparent;
+}
+@media only screen and (max-width:778px){
+    body{
+        font-size:12px;
+    }
+    video{
+        height:100%;
+        width:auto;
+        margin-left:-50%;
+        overflow: hidden;
+    }
+    header{
+        padding: 0 0;
+    }
+    #hmain{
+        padding: 0 0;
+    }
+    section{
+        margin:auto 0.1em;
+    }
+    section img{
+        margin:auto 0;
+    }
+}
+@media only screen and (max-width:1024px){
+    video{
+        height:100%;
+        width:auto;
+        margin-left:-25%;
+        overflow: hidden;
+    }
+    #hmain{
+        padding: 0 2em;
+    }
+    section *{
+        flex-basis:100%;
+        margin:5vh 1em;
+    }
+    section:nth-child(even) h2{
+        order:0;
+    }
+    ul li a{
+        padding: 0.5rem 0.25rem;
+        margin: 0.5em 0.5em;
+    }
+}
+@media only screen and (min-width:1024px) and (max-width:1138px){
+    ul li a{
+        padding: 0.5rem 0.25rem;
+        margin: 0.5em 1em;
+    }
 }
