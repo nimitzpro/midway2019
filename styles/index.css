@@ -32,6 +32,20 @@ h1{
     font-size:5em;
     padding:0.25em;
     font-family:YFury,sans-serif;
+    text-shadow:none;
+    animation : shadowrev 0.5s;
+}
+header:hover h1{
+    animation:shadow 0.5s;
+    text-shadow: 0.1em 0.1em 0.025em rgba(0,0,0,0.4);
+}
+@keyframes shadow{
+    from {text-shadow:none;}
+    to {text-shadow: 0.1em 0.1em 0.025em rgba(0,0,0,0.4);}
+}
+@keyframes shadowrev{
+    from {text-shadow: 0.1em 0.1em 0.025em rgba(0,0,0,0.4);}
+    to {text-shadow:none;}
 }
 h2{
     font-size:2em;
@@ -59,31 +73,41 @@ h2{
 #sabaton a:hover{
     text-decoration: underline;
 }
-@keyframes move{
-    from{transform:translate(0);}
-    to{transform:translate(75);}
-}
-.in{
-    animation : move 1s;
-}
-.out{
-    animation :move 1s reverse;
-}
 
 @keyframes opac {
-    from {opacity:0.2;}
+    from {opacity:0.4;}
     to {opacity:1;}
   }
-.trans{
-    opacity:0.2;
+  @keyframes opacrev {
+    from {opacity:1;}
+    to {opacity:0.4;}
+  }  
+#hidden,#sabaton{
+    animation:opacrev 1s;
+    opacity:0.4;
 }
-.trans:hover{
-    animation: opac 1s alternate;
+#hidden:hover,#sabaton:hover{
+    animation: opac 1s;
+    opacity:1;
 }
-#toggle{
+#hidden #toggle{
+    display:inline-block;
+    padding:0.25em 0.5em;
+}
+#sabaton #toggle{
     display:block;
     width:10%;
     float:left;
+}
+#hidden{
+    display:none;
+    position:fixed;
+    right:0;
+    top:0;
+    background-color:rgb(0,0,0);
+    color:white;
+    padding-top:0.5em;
+    width:auto;
 }
 button{
     cursor:pointer;
@@ -160,23 +184,25 @@ section{
     display:flex;
     flex-wrap:wrap;
     align-items:center;
+    justify-content:space-evenly;
 }
 section h2{
     color:rgb(81,9,9);
     text-decoration:underline;
     padding-bottom:0.8em;
 }
+section #exp{
+    margin: 4em 1em 0 1em;
+}
 section img{
-    margin: 4em 2em 0 2em;
     height:auto;
     width:auto;
     border:0.2em double;
-    flex-basis: 100%;
 }
-section:nth-child(even){
+section:nth-child(2){
     background-color:rgba(228, 228, 228, 0.75);
 }
-section:nth-child(even) h2{
+section:nth-child(2) h2{
     order:2;
 }
 section *{
@@ -185,12 +211,23 @@ section *{
 section p *{
     margin : 0;
 }
-section:nth-last-child(){
-    flex-direction: column;
-}
 section button{
     background-color:transparent;
 }
+#gallery img{
+    width:100%;
+}
+#gallery figcaption{
+    text-align:center;
+}
+#gallery{
+    display:flex;
+    justify-content:space-around;
+}
+#gallery h2{
+    flex-basis:80%;
+}
+
 @media only screen and (max-width:778px){
     body{
         font-size:12px;
@@ -212,6 +249,7 @@ section button{
     }
     section img{
         margin:auto 0;
+        flex-basis:80%;
     }
 }
 @media only screen and (max-width:1024px){
@@ -225,10 +263,10 @@ section button{
         padding: 0 2em;
     }
     section *{
-        flex-basis:100%;
+        flex-basis:80%;
         margin:5vh 1em;
     }
-    section:nth-child(even) h2{
+    section:nth-child(2) h2{
         order:0;
     }
     ul li a{
@@ -240,5 +278,27 @@ section button{
     ul li a{
         padding: 0.5rem 0.25rem;
         margin: 0.5em 1em;
+    }
+}
+@media only screen and (min-width:1138px){
+    figure{
+        position:relative;
+        margin:1em 0;
+    }
+    figcaption{
+        display:none;
+        bottom:0.4em;
+        left:0.18em;
+        width:100%;
+        z-index:4;
+        background-color:rgba(228, 228, 228, 0.5);
+        padding : 0.25em 0;
+        color:rgb(81,9,9);
+        font-family:JA3017;
+        font-size:1.25em;
+    }
+    figure:hover figcaption{
+        display:block;
+        position:absolute;
     }
 }

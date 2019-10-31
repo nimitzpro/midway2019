@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <link rel="icon" href="favicon3.png" />
     <title>The Battle of Midway</title>
-    <style>*{margin:0;padding:0;}</style>
+    <style>*{margin:0;padding:0;
+            overflow:none;}</style>
     <link rel="stylesheet" href="styles/index.css" />
 </head>
 <body>
     <video loop muted autoplay src="assets/midwayvid.mp4"id="vid"></video>
-    <div id="sabaton">
+        <div id="hidden"><button id="toggle" onClick="togglePlayer()">Show Player</button></div>
+        <div id="sabaton" style="display:block;">
         <button id="toggle" onClick="togglePlayer()">Hide</button>
             <button onClick="vid()" id="vidclick">Pause Video</button>
             <a href="https://youtu.be/NuOnQpyP1nc">"Midway" by Sabaton</a> <audio controls src="assets/midway.mp3"></audio></div>
-    
     <header>
         <div id="hmain">
             <h1>Midway</h1>
@@ -43,62 +44,22 @@
         <section>
             <h2>Operation 'MI'</h2>
             <p>The Navy Staff, headed by Yamamato who engineered the Pearl Harbour attack, decided on a plan to bait the last two carriers into a battle. These were the Enterprise and Hornet. They would send a large fleet including 4 carriers of their own, to bombard the Midway Islands. They would then go into a battle and sink the USNs last 2 carriers. </p>
-            <img id="exp" src="assets/jpexpansion.png" />
-            <button onClick="window.open(getElementById('exp').src)">Open picture in New Tab</button>
+            <div>
+                <img id="exp" src="assets/jpexpansion.png" />
+                <button onClick="window.open(getElementById('exp').src)">Open picture in New Tab</button>
+            </div>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <figure><img src="assets/gallery/1.jfif" /><figcaption>SBD Dauntless at Midway</figcaption></figure>
+            <figure><img src="assets/gallery/2.jfif" /><figcaption>IJN Mikuma after USN air attacks</figcaption></figure>
+            <figure><img src="assets/gallery/6.jfif" /><figcaption>USS Enterprise(CV-6)</figcaption></figure>
+            <figure><img src="assets/gallery/5.jfif" /><figcaption>IJN Kaga</figcaption></figure>
+            <figure><img src="assets/gallery/3.jfif" /><figcaption>Artistic depiction of the US attack on the IJN carriers</figcaption></figure>
+            <figure><img src="assets/gallery/4.jfif" /><figcaption>Yorktown Sinking</figcaption></figure>
         </section>
     </main>
     <a class="top" onmouseover="button2()" onmouseout="buttonout2()" href="#"><img id="top1" src="assets/chevdown.svg" /><img id="top2" src="assets/chevdown2.svg" /></a>
-<script>
-var x = true;
-function vid(){
-    if(x == true){
-        document.getElementById("vid").pause();
-        document.getElementById("vidclick").innerHTML = "Play Video";
-        x = false;
-    }
-    else{
-        document.getElementById("vid").play();
-        document.getElementById("vidclick").innerHTML = "Pause Video";
-        x = true;
-    }
-}
-let img1 = document.getElementById("img1");
-let img2 = document.getElementById("img2");
-function button(){
-    img1.style.display = "none";
-    img2.style.display = "block";
-}
-function buttonout(){
-    img1.style.display = "block";
-    img2.style.display = "none";
-}
-let top1 = document.getElementById("top1");
-let top2 = document.getElementById("top2");
-function button2(){
-    top1.style.display = "none";
-    top2.style.display = "block";
-}
-function buttonout2(){
-    top1.style.display = "block";
-    top2.style.display = "none";
-}
-let toggle = document.getElementById("toggle");
-let sabaton = document.getElementById("sabaton");
-
-function togglePlayer(){
-        if(toggle.innerHTML=="Hide"){
-        sabaton.classList.remove("out");
-        sabaton.classList.add("in");
-        toggle.innerHTML="Show";
-        sabaton.classList.add("trans");
-    }
-    else{
-        sabaton.classList.remove("in");
-        sabaton.classList.add("out");
-        toggle.innerHTML = "Hide";
-        sabaton.classList.remove("trans");
-    }
-}
-</script>
+<script src="index.js"></script>
 </body>
 </html>
