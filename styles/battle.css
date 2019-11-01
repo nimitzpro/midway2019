@@ -1,0 +1,9 @@
+#battle{
+    color:white;
+}
+#hmain:hover #battle,#battle:hover{
+    color:white;
+}
+section:nth-child(2){
+    background-color:rgba(228, 228, 228, 0.75);
+}

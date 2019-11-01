@@ -2,22 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>The Battle of Midway</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/results.css" />
 </head>
 <body>
-    <main>
-        <h2>Assumptions, Misinformation, and Bad Luck</h2>
-        <p>There were a multitude of problems which may not have been apparent to the IJN, but which played a crucial part in how it played out.</p>
-        <ul>
-            <li><h3>The codebook had been broken.</h3><p>The IJN used codebooks, unlike the German Enigma. However, the USN had already been breaking their codes since before the start of the war. They were due to get new codebooks before Operation MI was to take place but this was delayed, leading to the successful interception of their transmissions. With this information, the U.S. knew where and when the Japanese would attack.</p></li>
-            <li><h3>Yorktown</h3>This American carrier was heavily damaged in the Battle of the Coral Sea, and the Japanese assumed that she would either be sunk or in need or substantial repair. But she was given 72 hours of emergency repairs and sent to Midway along with the other carriers, levelling the playing field. American carriers also carried more planes than their Japanese couterparts so now they had almost achieved parity.</li>
-            <li><h3>Radar, or the lack thereof.</h3><p>While the IJN was one of the most advanced navies in the world, they were behind on radar. Their ships were not equipped with radar, and thus could not detect US aircraft. This was a disastrous error.</p></li>
-            <li><h3>Shoukaku and Zuikaku were not available.</h3><p>These were their most advanced carriers. Unfortunately, Shoukaku was heavily damaged in Coral Sea and Zuikaku was deplaned. Shoukaku's planes could have been transferred to Zuikaku giving them 5 carriers instead of 4, but as the carrier and air crew were part of the same unit, this was not done.</p></li>
-            <li><h3>Complacency</h3><p>Prior to Midway, Japan had been scoring victory after victory. Their actual battles were not as bad as the wargames they had simulated, and this probably contributed to the decision to execute MI as it was.</p></li>
-            <li><h3>Bad Weather</h3><p>The weather to the North-East of them was not great to say the least, and this helped the USN stay undetected.</p></li>
-            <li><h3>Inadequate Spotting</h3><p>There weren't enough spotter planes sent out to scout for the US, and there were issues with launching a plane, delaying a launch and possible spotting.</p></li>
-            <li><h3>Miscommunication</h3><p>An 'auxiliary fleet' of repair/transport ships was detected by the delayed spotter plane, which was likely to have been the US Fleet, but due to the bad weather the spotter plane missed them. Chuuichi Nagumo decided not to engage the 'auxiliary fleet' as the last time they had attacked such a fleet it was indeed a transport fleet.</p></li>
-        </ul>
+        <span id="top"></span>
+        <video loop muted autoplay src="assets/midwayvid.mp4"id="vid"></video>
+            <div id="hidden" style="display:none;"><button id="toggle" onClick="togglePlayer()">Show Player</button></div>
+            <div id="sabaton" style="display:block;">
+            <button id="toggle" onClick="togglePlayer()">Hide</button>
+                <button onClick="vid()" id="vidclick">Pause Video</button>
+                <a href="https://youtu.be/NuOnQpyP1nc">"Midway" by Sabaton</a> <audio controls src="assets/midway.mp3"></audio></div>
+        <header>
+            <div id="hmain">
+                <h1>Midway</h1>
+                <nav>
+                        <ul>
+                            <li><a id="index" href="index.html">Home</a></li>
+                            <li><a id="battle" href="battle.html">Order of Battle</a></li>
+                            <li><a id="results" href="results.html">Results of Midway</a></li>
+                        </ul>
+                    </nav>
+                <h2>A decisive naval battle fought between the U.S. and Japan in June 1942.</h2>
+                </div>
+            <a class="down" onmouseover="button()" onmouseout="buttonout()" onClick="scrollDown()"><img id="down1" src="assets/chevdown.svg" /><img id="down2" src="assets/chevdown2.svg" /></a>
+        </header>
+    <main id="main">
+        <section>
+            <h2>Assumptions, Misinformation, and Bad Luck</h2>
+            <p>There were a multitude of problems which may not have been apparent to the IJN, but which played a crucial part in how it played out.</p>
+        
+            <article><h3>The codebook had been broken.</h3><p>The IJN used codebooks, unlike the German Enigma. However, the USN had already been breaking their codes since before the start of the war. They were due to get new codebooks before Operation MI was to take place but this was delayed, leading to the successful interception of their transmissions. With this information, the U.S. knew where and when the Japanese would attack.</p></article>
+            <article><h3>Miscommunication</h3><p>An 'auxiliary fleet' of repair/transport ships was detected by the delayed spotter plane, which was likely to have been the US Fleet, but due to the bad weather the spotter plane missed them. Chuuichi Nagumo decided not to engage the 'auxiliary fleet' as the last time they had attacked such a fleet it was indeed a transport fleet.</p></article>
+            <article><h3>Radar, or the lack thereof.</h3><p>While the IJN was one of the most advanced navies in the world, they were behind on radar. Their ships were not equipped with radar, and thus could not detect US aircraft. This was a disastrous error.</p></article>
+            <article><h3>Bad Weather</h3><p>The weather to the North-East of them was not great to say the least, and this helped the USN stay undetected.</p></article>
+            <article><h3>Inadequate Spotting</h3><p>There weren't enough spotter planes sent out to scout for the US, and there were issues with launching a plane, delaying a launch and possible spotting.</p></article>
+            <article><h3>Complacency</h3><p>Prior to Midway, Japan had been scoring victory after victory. Their actual battles were not as bad as the wargames they had simulated, and this probably contributed to the decision to execute MI as it was.</p></article>
+            <article><h3>Shoukaku and Zuikaku were not available.</h3><p>These were their most advanced carriers. Unfortunately, Shoukaku was heavily damaged in Coral Sea and Zuikaku was deplaned. Shoukaku's planes could have been transferred to Zuikaku giving them 5 carriers instead of 4, but as the carrier and air crew were part of the same unit, this was not done.</p></article>
+            <article><h3>Yorktown</h3><p>This American carrier was heavily damaged in the Battle of the Coral Sea, and the Japanese assumed that she would either be sunk or in need or substantial repair. But she was given 72 hours of emergency repairs and sent to Midway along with the other carriers, levelling the playing field. American carriers also carried more planes than their Japanese couterparts so now they had almost achieved parity.</p></article>
+        </section>
     </main>
+    <footer><p>&copy; Alexander Stradnic 2019</p><p><a href="https://github.com/nimitzpro">Click here</a> to check out my other coding projects</p></footer>
+    <a class="top" onmouseover="button2()" onmouseout="buttonout2()" onClick="scrollUp()"><img id="top1" src="assets/chevdown.svg" /><img id="top2" src="assets/chevdown2.svg" /></a>
+<script src="index.js"></script>
 </body>
 </html>
