@@ -19,8 +19,8 @@ video{
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
-    width:auto;
-    height:100vh;
+    width:100%;
+    height:auto;
     z-index: -1;
     overflow: hidden !important;
 }
@@ -240,6 +240,10 @@ footer{
 @media screen and (max-width:900px){
     footer *{
         flex-basis:100%;
+    }
+    video{
+        height:100%;
+        width:auto;
     }
 }
 @media screen and (max-width:778px){
