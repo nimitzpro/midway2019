@@ -212,7 +212,7 @@ footer{
     justify-content: space-evenly;
     flex-wrap:wrap;
 }
-@media screen and (min-width:1024px){
+@media screen and (min-width:1280px){
     #hidden:hover,#sabaton:hover{
         animation: opac 1s;
         opacity:1;
@@ -234,21 +234,18 @@ footer{
     }
     ul li{
         margin: 0.5em 1em;
-        flex-basis:100%;
     }
 }
-@media screen and (max-width:900px){
-    footer *{
+@media screen and (max-width:1000px){
+    footer *,nav ul li{
         flex-basis:100%;
     }
     video{
         height:100%;
         width:auto;
     }
-}
-@media screen and (max-width:778px){
     header,main,footer{
-        font-size:1.25em;
+        font-size:1.35em;
     }
     /* video{ 
         height:100%;
@@ -263,7 +260,7 @@ footer{
     }
     section{
         margin:auto 0;
-        padding:20vh 0;
+        padding:30vh 0;
     }
     figcaption{
         margin:0 0;
