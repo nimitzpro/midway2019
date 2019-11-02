@@ -1,192 +1,8 @@
-@font-face{
-    font-family:YFury;
-    src:url("../fonts/yfury.ttf");
-}
-@font-face{
-    font-family:JA3017;
-    src:url("../fonts/ja3017.ttf");
-}
-body{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:15px;
-    text-align:center;
-    background-color:black;
-    scroll-behavior: smooth;
-}
-video{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index: -1;
-    overflow: hidden !important;
-}
-#top{
-    position:absolute;
-    top:0;
-    left:0;
-    display:".";
-}
-a{
-    text-decoration: none;
-}
-h1{
-    font-size:5em;
-    padding:0.25em;
-    font-family:YFury,sans-serif;
-    text-shadow:none;
-    animation : shadowrev 0.5s;
-}
-h2{
-    font-size:2em;
-    padding:0.25em;
-}
-
-#sabaton{
-    position:fixed;
-    right:0;
-    top:0;
-    background-color:rgb(0,0,0);
+#index{
     color:white;
-    padding-top:0.5em;
-    border-left:1em solid rgb(0,0,0);
-    border-bottom:1em solid rgb(0,0,0);
-    border-bottom-left-radius: 2em 2em;
 }
-#sabaton a{
-    display:block;
-    width:60%;
-    margin: 0 auto 0.5em auto;
-}
-#sabaton a:hover{
-    text-decoration: underline;
-}
-#hidden{
-    border-left:0.5em solid black;
-    border-bottom:0.5em solid black;
-    border-bottom-left-radius: 1.5em 1.5em;
-}
-@keyframes opac {
-    from {opacity:0.4;}
-    to {opacity:1;}
-  }
-  @keyframes opacrev {
-    from {opacity:1;}
-    to {opacity:0.4;}
-  }  
-#hidden,#sabaton{
-    animation:opacrev 1s;
-    opacity:0.4;
-    z-index:3;
-}
-#hidden:hover,#sabaton:hover{
-    animation: opac 1s;
-    opacity:1;
-}
-#hidden #toggle{
-    display:inline-block;
-    padding:0.25em 0.5em;
-}
-#sabaton #toggle{
-    display:block;
-    width:10%;
-    float:left;
-}
-#hidden{
-    display:none;
-    position:fixed;
-    right:0;
-    top:0;
-    background-color:rgb(0,0,0);
+#hmain:hover #index,#index:hover{
     color:white;
-    padding-top:0.5em;
-    width:auto;
-}
-a, button{
-    cursor:pointer;
-}
-button{
-    border:none;
-    color:rgb(300, 4, 4);
-    font-size:1.25em;
-    margin-bottom:0.5em;
-    background-color:black;
-}
-button:hover, footer a:hover{
-    text-decoration:underline;
-}
-header{
-    color:rgb(85, 1, 1);
-    margin:40vh 0;
-    padding:0 2em;
-    background-color:transparent;
-}
-#hmain{
-    display:inline-block;
-    margin:0 auto;
-    transition: 1s ease;
-    border-radius:3em 0;
-    padding:0 3em;
-}
-#hmain:hover{
-    background-color:rgba(216, 216, 216, 0.55);
-    color:rgb(150, 2, 2);
-}
-#hmain:hover ul a{
-    color:rgb(85, 1, 1);
-}
-#down img,.top img{
-    margin:1em auto;
-    width:5em;
-}
-#down1,#top1{
-    display:block;
-    transition: .5s ease;
-}
-#down2,#top2{
-    display:none;
-    transition: .5s ease;
-}
-#top1,#top2{
-    transform: rotate(180deg);
-}
-.top{
-    position:fixed;
-    right:5%;
-    bottom:15%;
-}
-nav ul{
-    font-family: JA3017,sans-serif;
-    display:flex;
-    justify-content: center;
-    list-style-type: none;
-    flex-wrap: wrap;
-}
-a{
-    color:crimson;
-}
-ul li a{
-    margin:1em 1.5em;
-    font-size:2.5em;
-    transition: .5s ease;
-}
-#hmain nav ul a:hover{
-    color:navy;
-}
-section{
-    padding : 20vh 1em;
-    background-color:rgba(170, 170, 170, 0.75);
-    border-top:0.2em double black;
-    font-size:1.5em;
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
-    justify-content:space-evenly;
-}
-section h2{
-    color:rgb(81,9,9);
-    text-decoration:underline;
-    padding-bottom:0.8em;
 }
 section div{
     margin: 2.5em 0 0 0;
@@ -194,17 +10,8 @@ section div{
 section img{
     border:0.2em double;
 }
-section:nth-child(2){
-    background-color:rgba(228, 228, 228, 0.75);
-}
 section:nth-child(2) h2{
     order:2;
-}
-section *{
-    flex-basis:40%;
-}
-section p *{
-    margin : 0;
 }
 section button{
     background-color:transparent;
@@ -229,24 +36,14 @@ section button{
 #gallery h2{
     flex-basis:80%;
 }
-footer{
-    background-color:black;
-    color:royalblue;
-    width:100%;
-    text-align:center;
-    padding:2em 0;
-    font-weight: bold;
-    font-size:1.25em;
-    display:flex;
-    justify-content: space-evenly;
-    flex-wrap:wrap;
-}
+
 @media screen and (min-width:1024px){
     figure{
         position:relative;
         margin:1em 0;
     }
     figcaption{
+        font-size:1em;
         bottom:0.3em;
         left:0.16em;
         width:100%;
@@ -271,50 +68,16 @@ footer{
         from{opacity:1;}
         to{opacity:0;}
     }
-    #hmain:hover h1{
-        animation:shadow 0.5s;
-        text-shadow: 0.1em 0.1em 0.025em rgba(0,0,0,0.4);
-    }
-    @keyframes shadow{
-        from {text-shadow:none;}
-        to {text-shadow: 0.1em 0.1em 0.025em rgba(0,0,0,0.4);}
-    }
-    @keyframes shadowrev{
-        from {text-shadow: 0.1em 0.1em 0.025em rgba(0,0,0,0.4);}
-        to {text-shadow:none;}
-    }
-}
-@media screen and (max-width:1600px){
-    video{
-        height:100%;
-        width:auto;
-        margin-left:-12.5%;
-    }
 }
 @media screen and (max-width:1024px){
-    header{
+    /* header{
         margin:20vh 0;
-    }
-    video{
-        height:100%;
-        width:auto;
-        margin-left:-25%;
-    }
-    #hmain{
-        padding: 0 0em;
-    }
+    } */
     section *,#gallery figure{
         flex-basis:48%;
     }
     section:nth-child(2) h2{
         order:0;
-    }
-    ul li a{
-        padding: 0.5rem 0.25rem;
-    }
-    ul li{
-        margin: 0.5em 1em;
-        flex-basis:100%;
     }
     figcaption{
         margin:0.5em 0;
@@ -330,39 +93,10 @@ footer{
     section>*,#gallery figure{
         flex-basis:80%;
     }
-    footer *{
-        flex-basis:100%;
-    }
 }
-@media screen and (max-width:778px){
-    body{
-        font-size:12px;
-    }
-    video{
-        height:100%;
-        width:auto;
-        margin-left:-50%;
-    }
-    header{
-        padding: 0 0;
-    }
-    #hmain{
-        padding: 0 0;
-    }
-    section{
-        margin:auto 0;
-        padding:20vh 0;
-    }
-    figcaption{
-        margin:0 0;
-    }
-    nav ul li{
-        margin: 0.25em 0;
-    }
-    nav ul li a{
-        padding: 0.5rem 0;
-    }
-    main section *, main #gallery figure{
-        flex-basis:95%;
+
+@media screen and (min-width:200em){
+    #gallery figure{
+        flex-basis:30%;
     }
 }

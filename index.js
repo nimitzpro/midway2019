@@ -47,7 +47,7 @@ let sabaton = document.getElementById("sabaton");
 function togglePlayer(){
         if(sabaton.style.display == "block"){
         sabaton.style.display = "none";
-        hidden.style.display = "inline-block";
+        hidden.style.display = "block";
     }
     else{
         sabaton.style.display = "block";
