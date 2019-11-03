@@ -1,10 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="favicon3.png" />
     <title>The Battle of Midway</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/battle.css" />
 </head>
+
 <body>
-    <canvas id="canvas" style="width:80%;height:auto;margin:1em 10% 0 10%;border:1px solid black;"></canvas>
+    <span id="top"></span>
+    <video loop muted autoplay src="assets/midwayvid.mp4" id="vid"></video>
+    <div id="hidden" style="display:none;"><button id="toggle" onClick="togglePlayer()">Show Player</button></div>
+    <div id="sabaton" style="display:block;">
+        <button id="toggle" onClick="togglePlayer()">Hide</button>
+        <button onClick="vid()" id="vidclick">Pause Video</button>
+        <a href="https://youtu.be/NuOnQpyP1nc">"Midway" by Sabaton</a> <audio controls src="assets/midway.mp3"></audio>
+    </div>
+    <header>
+        <div id="hmain">
+            <h1>Midway</h1>
+            <nav>
+                <ul>
+                    <li><a id="index" href="index.html">Home</a></li>
+                    <li><a id="battle" href="battle.html">Order of Battle</a></li>
+                    <li><a id="results" href="results.html">Results of Midway</a></li>
+                </ul>
+            </nav>
+            <h2>A decisive naval battle fought between the U.S. and Japan in June 1942.</h2>
+        </div>
+        <a class="down" onmouseover="button()" onmouseout="buttonout()" onClick="scrollDown()"><img id="down1"
+                src="assets/chevdown.svg" /><img id="down2" src="assets/chevdown2.svg" /></a>
+    </header>
+
+    <main id="main">
+        <section>
+            <h2>Order of Battle</h2>
+            <article>
+                <video loop muted autoplay src="assets/comp.mp4"></video>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Alexander Stradnic 2019</p>
+        <p><a href="https://github.com/nimitzpro">Click here</a> to check out my other coding projects</p>
+    </footer>
+    <a class="top" onmouseover="button2()" onmouseout="buttonout2()" onClick="scrollUp()"><img id="top1"
+            src="assets/chevdown.svg" /><img id="top2" src="assets/chevdown2.svg" /></a>
+    <script src="script.js"></script>
 </body>
+
 </html>
