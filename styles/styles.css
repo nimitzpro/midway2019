@@ -1,5 +1,13 @@
 *{margin:0;padding:0;}html{overflow-x:hidden;}
 @font-face{
+    font-family:CarroisGothic;
+    src:url("../fonts/CarroisGothic.ttf");
+}
+@font-face{
+    font-family:CarroisGothicSC;
+    src:url("../fonts/CarroisGothicSC.ttf");
+}
+@font-face{
     font-family:YFury;
     src:url("../fonts/yfury.ttf");
 }
@@ -8,7 +16,7 @@
     src:url("../fonts/ja3017.ttf");
 }
 body{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:CarroisGothic,Verdana, Geneva, Tahoma, sans-serif;
     font-size:15px;
     text-align:center;
     background-color:black;
@@ -205,6 +213,9 @@ section{
     align-items:center;
     justify-content:space-evenly;
 }
+section:last-of-type{
+    border-bottom:0.2em double black;
+}
 section img{
     border:0.2em double;
 }
@@ -274,7 +285,6 @@ footer{
     }
     section{
         margin:auto 0;
-        padding:15vh 0;
     }
     figcaption{
         margin:0 0;
