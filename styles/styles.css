@@ -266,6 +266,9 @@ footer{
     footer *,nav ul li{
         flex-basis:100%;
     }
+    nav ul li{
+        margin:auto 0;
+    }
     #vid{
         height:100%;
         width:auto;
