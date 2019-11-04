@@ -10,13 +10,16 @@ section:nth-child(2){
 section h2, section p{
     flex-basis: 100%;
 }
+h4,h5{
+    color:rgb(70, 9, 88);
+}
 section h3{
     color:rgb(81,9,9);
     font-size:1.5em;
     padding:0.2em;
 }
 p{
-    margin-bottom:2em;
+    margin-bottom:0.5em;
 }
 main section{
     align-items:flex-start;
@@ -26,6 +29,7 @@ section *{
 }
 video{
     width:100%;
+    margin:1em 0;
 }
 #forces{
     justify-content: space-evenly;
@@ -51,7 +55,7 @@ article>ul{
 article ul + ul{
     background-color:rgba(170, 0, 0, 0.4);
 }
-article li{
+#timeline p{
     text-align:left;
 }
 article li > ul{
@@ -62,3 +66,35 @@ article li > ul{
 article li > ul > li:before {
     content: "- ";
   }
+#timeline{
+    float:right;
+}
+#timeline p{
+    font-size:0.8em;
+}
+#timeline{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+#timeline article{
+    flex-basis:60%;
+    margin-left:1em;
+}
+#timeline article + article{
+    flex-basis: 30%;
+    background-color:rgba(88, 0, 0, 0.4);
+    padding:1em 1em;
+}
+@media screen and (max-width:1000px){
+    #timeline article, #timeline article + article{
+        flex-basis:100%;
+    }
+    #forces article{
+        flex-basis:100%;
+    }
+    #forces article *{
+        flex-basis:50%;
+        font-size:0.9em;
+    }
+}

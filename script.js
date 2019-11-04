@@ -54,20 +54,3 @@ function togglePlayer(){
         hidden.style.display = "none";
     }
 }
-
-// let show = document.getElementById("show");
-// var showing = true;
-// let fig = document.getElementsByClassName("gallery");
-// function hideGallery(){
-//     if(showing == true){
-//         fig.style.display = "block";
-//         fig.style.display = "none";
-//         show.innerHTML = "Show pictures";
-//         showing = false;
-//     }
-//     else{
-//         fig.style.display = "block";
-//         show.innerHTML = "Hide pictures";
-//         showing = true;
-//     }
-// }
