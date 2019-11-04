@@ -14,7 +14,7 @@ body{
     background-color:black;
     scroll-behavior: smooth;
 }
-video{
+#vid{
     position:fixed;
     top:50%;
     left:50%;
@@ -95,9 +95,25 @@ h2{
     to {opacity:0.4;}
   }  
 #hidden,#sabaton{
-    animation:opacrev 1s;
+    animation:opacrev 0.5s;
     opacity:0.4;
     z-index:3;
+}
+#hidden:hover,#sabaton:hover{
+    animation: opac 0.5s;
+    opacity:1;
+}
+#hmain:hover h1{
+    animation:shadow 0.5s;
+    text-shadow: 0.1em 0.1em 0.025em rgba(0,0,0,0.4);
+}
+@keyframes shadow{
+    from {text-shadow:none;}
+    to {text-shadow: 0.1em 0.1em 0.025em rgba(0,0,0,0.4);}
+}
+@keyframes shadowrev{
+    from {text-shadow: 0.1em 0.1em 0.025em rgba(0,0,0,0.4);}
+    to {text-shadow:none;}
 }
 a, button{
     cursor:pointer;
@@ -141,6 +157,7 @@ header{
 }
 .down,.top{
     padding:0 1em;
+    z-index:5;
 }
 .down img,.top img{
     width:5em;
@@ -158,8 +175,8 @@ header{
 }
 .top{
     position:fixed;
-    right:5%;
-    bottom:15%;
+    right:2.5%;
+    bottom:10%;
 }
 nav ul{
     font-family: JA3017,sans-serif;
@@ -172,7 +189,6 @@ a{
     color:crimson;
 }
 ul li a{
-    margin:1em 1.5em;
     font-size:2.5em;
     transition: .5s ease;
 }
@@ -188,6 +204,9 @@ section{
     flex-wrap:wrap;
     align-items:center;
     justify-content:space-evenly;
+}
+section img{
+    border:0.2em double;
 }
 section h2{
     color:rgb(81,9,9);
@@ -212,43 +231,35 @@ footer{
     justify-content: space-evenly;
     flex-wrap:wrap;
 }
-@media screen and (min-width:1024px){
-    #hidden:hover,#sabaton:hover{
-        animation: opac 1s;
-        opacity:1;
-    }
-    #hmain:hover h1{
-        animation:shadow 0.5s;
-        text-shadow: 0.1em 0.1em 0.025em rgba(0,0,0,0.4);
-    }
-    @keyframes shadow{
-        from {text-shadow:none;}
-        to {text-shadow: 0.1em 0.1em 0.025em rgba(0,0,0,0.4);}
-    }
-    @keyframes shadowrev{
-        from {text-shadow: 0.1em 0.1em 0.025em rgba(0,0,0,0.4);}
-        to {text-shadow:none;}
-    }
+@media screen and (min-width:1281px){
     ul li a{
-        padding: 0.5rem 0.25rem;
+        padding: 0.5rem 1.5rem;
     }
     ul li{
-        margin: 0.5em 1em;
-        flex-basis:100%;
+        margin:1em 1.5em;
     }
 }
-@media screen and (max-width:900px){
-    footer *{
+@media screen and (max-width:1280px){
+    #hmain{
+        padding : 0 2em;
+    }
+    ul li a{
+        padding: 0.5em 1em;
+    }
+    ul li{
+        margin: 0.5em 0.5em;
+    }
+}
+@media screen and (max-width:1000px){
+    footer *,nav ul li{
         flex-basis:100%;
     }
-    video{
+    #vid{
         height:100%;
         width:auto;
     }
-}
-@media screen and (max-width:778px){
     header,main,footer{
-        font-size:1.25em;
+        font-size:1.35em;
     }
     /* video{ 
         height:100%;
@@ -263,7 +274,7 @@ footer{
     }
     section{
         margin:auto 0;
-        padding:20vh 0;
+        padding:15vh 0;
     }
     figcaption{
         margin:0 0;
@@ -272,7 +283,7 @@ footer{
         margin: 0.25em 0;
     }
     nav ul li a{
-        padding: 0.5rem 0;
+        padding: 1em 0;
     }
     main section *, main #gallery figure{
         flex-basis:95%;

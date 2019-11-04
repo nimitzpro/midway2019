@@ -6,9 +6,7 @@
 }
 section div{
     margin: 2.5em 0 0 0;
-}
-section img{
-    border:0.2em double;
+    flex-basis:80%;
 }
 section:nth-child(2) h2{
     order:2;
@@ -36,7 +34,9 @@ section button{
 #gallery h2{
     flex-basis:80%;
 }
-
+#exp{
+    width:100%;
+}
 @media screen and (min-width:1024px){
     figure{
         position:relative;
@@ -95,7 +95,7 @@ section button{
     }
 }
 
-@media screen and (min-width:300em){
+@media screen and (min-width:200em){
     #gallery figure{
         flex-basis:30%;
     }
