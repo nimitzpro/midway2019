@@ -76,12 +76,15 @@ article ul + ul{
     text-align:left;
 }
 article li > ul{
-    text-align: center;
+    text-align: left;
     list-style-type: none;
     font-family:CarroisGothic;
 }
+li>ul li{
+    margin-right:0.5em;
+}
 article li > ul > li:before {
-    content: "- ";
+    content: "- ";=
   }
 #timeline{
     float:right;
@@ -112,7 +115,7 @@ article li > ul > li:before {
     padding:0;
     border:none;
 }
-b{
+b,h3{
     font-family: CarroisGothicSC;
 }
 @media screen and (max-width:1000px){
