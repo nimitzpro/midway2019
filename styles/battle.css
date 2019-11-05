@@ -37,14 +37,14 @@ video{
     margin:1em 0;
 }
 #forces{
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items:flex-start;
 }
 #forces article{
-    flex-basis:40%;
+    flex-basis:45%;
     display:flex;
-    justify-content:center;
+    justify-content:space-around;
     flex-wrap:wrap;
-    align-content: space-around;
 }
 #forces article h3{
     flex-basis:100%;
@@ -84,7 +84,7 @@ li>ul li{
     margin-right:0.5em;
 }
 article li > ul > li:before {
-    content: "- ";=
+    content: "- ";  
   }
 #timeline{
     float:right;
