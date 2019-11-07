@@ -56,11 +56,11 @@ h2{
     position:fixed;
     right:0;
     top:0;
-    background-color:rgb(0,0,0);
-    color:white;
+    background-color:black;
+    color:crimson;
     padding-top:0.5em;
-    border-left:1em solid rgb(0,0,0);
-    border-bottom:1em solid rgb(0,0,0);
+    border-left:1em solid black;
+    border-bottom:1em solid black;
     border-bottom-left-radius: 2em 2em;
 }
 #sabaton a{
@@ -75,15 +75,15 @@ h2{
     border-bottom:0.5em solid black;
     border-bottom-left-radius: 1.5em 1.5em;
 }
-#hidden #toggle{
+#hidden .toggle{
     display:inline-block;
     padding:0.25em 0.5em;
 }
-#sabaton #toggle{
+#sabaton .toggle{
     display:block;
     float:left;
 }
-#sabaton #toggle, #sabaton #vidclick{
+.toggle, #sabaton #vidclick{
     margin-right:1em;
 }
 #hidden{
@@ -96,21 +96,12 @@ h2{
     padding-top:0.5em;
     width:auto;
 }
-@keyframes opac {
-    from {opacity:0.4;}
-    to {opacity:1;}
-  }
-  @keyframes opacrev {
-    from {opacity:1;}
-    to {opacity:0.4;}
-  }  
 #hidden,#sabaton{
-    animation:opacrev 0.5s;
+    transition:all 0.5s ease;
     opacity:0.4;
     z-index:3;
 }
 #hidden:hover,#sabaton:hover{
-    animation: opac 0.5s;
     opacity:1;
 }
 #hmain:hover h1{
@@ -322,8 +313,9 @@ footer{
 }
 #audiobutton{
     width:2em;
-    display:inline-block;
     border-radius:0.1em;
+    margin-bottom:0;
+    transition: all 0.25s ease;
 }
 #audiobutton:hover{
     background-color:rgba(170, 170, 170, 0.25)
@@ -333,4 +325,49 @@ footer{
 } 
 #pause{
     display:none;
+}
+#audioplayer{
+    display:flex;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+#timestamp{
+    display:inline;
+    font-size:1.5em;
+}
+#cont{
+    width:70%;
+    height:0.35em;
+    background-color:transparent;
+    position:relative;
+    padding:0.75em 0;
+}
+#musicline{
+    width:90%;
+    height:0.35em;
+    background-color:white;
+    position:relative;
+}
+#musichover{
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:0.35em;
+    background-color:rgb(150, 2, 2);
+}
+#musicpoint{
+    height:0.35em;
+    width:0%;
+    background-color:crimson;
+}
+#musicpoint::after{
+    display:block;
+    position: relative;
+    content:" ";
+    left:95%;
+    height:0.4em;
+    width:0.5rem;
+    background-color:navy;
 }

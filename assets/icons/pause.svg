@@ -13,11 +13,11 @@
    viewBox="0 0 640 640"
    width="640"
    height="640"
-   id="svg3825"
-   sodipodi:docname="play.svg"
+   id="svg48"
+   sodipodi:docname="pause.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <metadata
-     id="metadata3829">
+     id="metadata52">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -38,47 +38,51 @@
      inkscape:pageshadow="2"
      inkscape:window-width="1366"
      inkscape:window-height="745"
-     id="namedview3827"
+     id="namedview50"
      showgrid="false"
      inkscape:zoom="0.36875"
-     inkscape:cx="272.54237"
-     inkscape:cy="320"
+     inkscape:cx="-352.37288"
+     inkscape:cy="187.41996"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg3825" />
+     inkscape:current-layer="g46" />
   <defs
-     id="defs3811">
+     id="defs34">
     <path
-       d="M200 502.5L460 360L200 200"
-       id="c1vlhbAxAk" />
+       d="M210 200L280 200L280 505.11L210 505.11L210 200Z"
+       id="b1rVmPvUgO" />
+    <path
+       d="M360 200L430 200L430 500L360 500L360 200Z"
+       id="a3dfpgN8NA" />
   </defs>
   <g
-     id="g3823"
-     transform="matrix(1.65,0,0,1.65,-210,-259.125)">
+     id="g46"
+     transform="matrix(1.65,0,0,1.5166777,-206.5,-183.20582)">
     <g
-       id="g3821">
+       id="g44"
+       transform="translate(-6.060606,-13.186717)">
       <g
-         id="g3819">
+         id="g38">
         <use
-           xlink:href="#c1vlhbAxAk"
-           id="use3813"
-           style="opacity:1;fill:#510909;fill-opacity:1"
+           xlink:href="#b1rVmPvUgO"
+           id="use36"
+           style="opacity:1;fill:#CC0033;fill-opacity:1"
            x="0"
            y="0"
            width="100%"
            height="100%" />
-        <g
-           id="g3817">
-          <use
-             xlink:href="#c1vlhbAxAk"
-             id="use3815"
-             style="opacity:1;fill-opacity:0;stroke:#000000;stroke-width:0;stroke-opacity:1"
-             x="0"
-             y="0"
-             width="100%"
-             height="100%" />
-        </g>
+      </g>
+      <g
+         id="g42">
+        <use
+           xlink:href="#a3dfpgN8NA"
+           id="use40"
+           style="opacity:1;fill:#CC0033;fill-opacity:1"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
       </g>
     </g>
   </g>

@@ -16,7 +16,13 @@
     <div id="sabaton" style="display:block;">
         <button id="toggle" onClick="togglePlayer()">Hide</button>
         <button onClick="vid()" id="vidclick">Pause Video</button>
-        <a href="https://youtu.be/NuOnQpyP1nc">"Midway" by Sabaton</a> <audio controls src="assets/midway.mp3"></audio>
+        <a href="https://youtu.be/NuOnQpyP1nc">"Midway" by Sabaton</a>
+        <div id="audioplayer">
+            <audio id="audio" src="assets/midway.mp3"></audio>
+            <button id="audiobutton" onClick="audioControl()"><img id="play" style="display:block;" src="assets/icons/play.svg" /><img id="pause" src="assets/icons/pause.svg" /></button>
+            <div id="cont"><div id="musicline"><div id="musicpoint"></div><div id="musichover"></div></div></div>
+            <span id="timestamp"></span>
+        </div>
     </div>
     <header>
         <div id="hmain">
@@ -31,9 +37,9 @@
             <h2>A decisive naval battle fought between the U.S. and Japan in June 1942.</h2>
         </div>
         <a class="down" onmouseover="button()" onmouseout="buttonout()" onClick="scrollDown()"><img id="down1"
-                src="assets/chevdown.svg" /><img id="down2" src="assets/chevdown2.svg" /></a>
+                src="assets/icons/chevdown.svg" /><img id="down2" src="assets/icons/chevdown2.svg" /></a>
         <a class="top" onmouseover="button2()" onmouseout="buttonout2()" onClick="scrollUp()"><img id="top1"
-                src="assets/chevdown.svg" /><img id="top2" src="assets/chevdown2.svg" /></a>
+                src="assets/icons/chevdown.svg" /><img id="top2" src="assets/icons/chevdown2.svg" /></a>
     </header>
     <main id="main">
         <section>
