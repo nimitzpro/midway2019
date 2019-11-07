@@ -59,6 +59,8 @@ let pause = document.getElementById("pause");
 let play = document.getElementById("play");
 let audio = document.getElementById("audio");
 
+audio.addEventListener("onplaying",timer());
+
 function audioControl(){
     if(play.style.display == "block"){
         pause.style.display = "block";
@@ -70,4 +72,23 @@ function audioControl(){
         play.style.display = "block";
         audio.pause();
     }
+}
+function timer(){
+    if(audio.onpause == true){
+        clearInterval(timer2, 1000);
+    }
+    setInterval(timer2, 1000);
+}
+var mins = 0;
+var secs = 0;
+function timer2(){
+    mins = audio.currentTime / 60 | 0;
+    if(mins.toString().length < 2){
+        mins = "0"+(audio.currentTime / 60 | 0).toString();
+    }
+    secs = audio.currentTime % 60 | 0;
+    if(secs.toString().length < 2){
+        secs = "0"+(audio.currentTime % 60 | 0).toString(); 
+    }
+    document.getElementById("timestamp").innerHTML = mins + " : " + secs;
 }
