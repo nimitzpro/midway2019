@@ -57,15 +57,17 @@ function togglePlayer(){
 
 let pause = document.getElementById("pause");
 let play = document.getElementById("play");
-let audio = document.getElementsByTagName("audio");
+let audio = document.getElementById("audio");
 
-function audioControl(){
-    audio.onplaying = () => {
-        pause.style.display = "block";
-        play.style.display = "none";
-    };
-    audio.onpause = () => {
-        pause.style.display = "none";
-        play.style.display = "block";
-    }
-}
+// function audioControl(){
+//     if(play.style.display == "block"){
+//         pause.style.display = "block";
+//         play.style.display = "none";
+//         audio.play();
+//     }
+//     else{
+//         pause.style.display = "none";
+//         play.style.display = "block";
+//         audio.pause();
+//     }
+// }

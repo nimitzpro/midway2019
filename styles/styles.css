@@ -81,8 +81,10 @@ h2{
 }
 #sabaton #toggle{
     display:block;
-    width:10%;
     float:left;
+}
+#sabaton #toggle, #sabaton #vidclick{
+    margin-right:1em;
 }
 #hidden{
     display:none;
@@ -318,13 +320,17 @@ footer{
         margin-left:-25%;
     } */
 }
-#audio{
-    width:1em;
+#audiobutton{
+    width:2em;
     display:inline-block;
+    border-radius:0.1em;
 }
-#audio img{
+#audiobutton:hover{
+    background-color:rgba(170, 170, 170, 0.25)
+}
+#audiobutton img{
     width:100%;
-}
+} 
 #pause{
     display:none;
 }
