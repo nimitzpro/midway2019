@@ -318,3 +318,13 @@ footer{
         margin-left:-25%;
     } */
 }
+#audio{
+    width:1em;
+    display:inline-block;
+}
+#audio img{
+    width:100%;
+}
+#pause{
+    display:none;
+}

@@ -54,3 +54,18 @@ function togglePlayer(){
         hidden.style.display = "none";
     }
 }
+
+let pause = document.getElementById("pause");
+let play = document.getElementById("play");
+let audio = document.getElementsByTagName("audio");
+
+function audioControl(){
+    audio.onplaying = () => {
+        pause.style.display = "block";
+        play.style.display = "none";
+    };
+    audio.onpause = () => {
+        pause.style.display = "none";
+        play.style.display = "block";
+    }
+}
