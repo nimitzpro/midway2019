@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon3.png" />
     <title>The Battle of Midway</title>
     <link rel="stylesheet" href="styles/styles.css" />
@@ -10,18 +11,18 @@
 </head>
 
 <body>
-    <span id="top"></span>
+    <p id="top"></p>
     <video loop muted autoplay src="assets/midwayvid.mp4" id="vid"></video>
-    <div id="hidden" style="display:none;"><button id="toggle" onClick="togglePlayer()">Show Player</button></div>
+    <div id="hidden" style="display:none;"><button class="toggle" onClick="togglePlayer()">Show Player</button></div>
     <div id="sabaton" style="display:block;">
-        <button id="toggle" onClick="togglePlayer()">Hide</button>
+        <button class="toggle" onClick="togglePlayer()">Hide</button>
         <button onClick="vid()" id="vidclick">Pause Video</button>
         <a href="https://youtu.be/NuOnQpyP1nc">"Midway" by Sabaton</a>
         <div id="audioplayer">
             <audio id="audio" src="assets/midway.mp3"></audio>
-            <button id="audiobutton" onClick="audioControl()"><img id="play" style="display:block;" src="assets/icons/play.svg" /><img id="pause" src="assets/icons/pause.svg" /></button>
+            <button id="audiobutton" onClick="audioControl()"><img alt="" id="play" style="display:block;" src="assets/icons/play.svg" /><img alt="" id="pause" src="assets/icons/pause.svg" /></button>
             <div id="cont"><div id="musicline"><div id="musicpoint"></div><div id="musichover"></div></div></div>
-            <span id="timestamp"></span>
+            <p id="timestamp"></p>
         </div>
     </div>
     <header>
@@ -37,9 +38,9 @@
             <h2>A decisive naval battle fought between the U.S. and Japan in June 1942.</h2>
         </div>
         <a class="down" onmouseover="button()" onmouseout="buttonout()" onClick="scrollDown()"><img id="down1"
-                src="assets/icons/chevdown.svg" /><img id="down2" src="assets/icons/chevdown2.svg" /></a>
+                src="assets/icons/chevdown.svg" alt=""/><img id="down2" src="assets/icons/chevdown2.svg" alt=""/></a>
         <a class="top" onmouseover="button2()" onmouseout="buttonout2()" onClick="scrollUp()"><img id="top1"
-                src="assets/icons/chevdown.svg" /><img id="top2" src="assets/icons/chevdown2.svg" /></a>
+                src="assets/icons/chevdown.svg" alt=""/><img id="top2" src="assets/icons/chevdown2.svg" alt=""/></a>
     </header>
     <main id="main">
         <section>

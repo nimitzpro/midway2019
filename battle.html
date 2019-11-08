@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon3.png" />
     <title>The Battle of Midway</title>
     <link rel="stylesheet" href="styles/styles.css" />
@@ -10,7 +11,7 @@
 </head>
 
 <body>
-    <span id="top"></span>
+    <p id="top"></p>
     <video loop muted autoplay src="assets/midwayvid.mp4" id="vid"></video>
     <div id="hidden" style="display:none;"><button class="toggle" onClick="togglePlayer()">Show Player</button></div>
     <div id="sabaton" style="display:block;">
@@ -19,9 +20,9 @@
         <a href="https://youtu.be/NuOnQpyP1nc">"Midway" by Sabaton</a>
         <div id="audioplayer">
             <audio id="audio" src="assets/midway.mp3"></audio>
-            <button id="audiobutton" onClick="audioControl()"><img id="play" style="display:block;" src="assets/icons/play.svg" /><img id="pause" src="assets/icons/pause.svg" /></button>
+            <button id="audiobutton" onClick="audioControl()"><img id="play" style="display:block;" src="assets/icons/play.svg" alt=""/><img id="pause" src="assets/icons/pause.svg" alt=""/></button>
             <div id="cont"><div id="musicline"><div id="musicpoint"></div><div id="musichover"></div></div></div>
-            <span id="timestamp"></span>
+            <p id="timestamp"></p>
         </div>
     </div>
     <header>
@@ -37,9 +38,9 @@
             <h2>A decisive naval battle fought between the U.S. and Japan in June 1942.</h2>
         </div>
         <a class="down" onmouseover="button()" onmouseout="buttonout()" onClick="scrollDown()"><img id="down1"
-                src="assets/icons/chevdown.svg" /><img id="down2" src="assets/icons/chevdown2.svg" /></a>
+                src="assets/icons/chevdown.svg" alt=""/><img id="down2" src="assets/icons/chevdown2.svg" alt=""/></a>
     <a class="top" onmouseover="button2()" onmouseout="buttonout2()" onClick="scrollUp()"><img id="top1"
-        src="assets/icons/chevdown.svg" /><img id="top2" src="assets/icons/chevdown2.svg" /></a>
+        src="assets/icons/chevdown.svg" alt=""/><img id="top2" src="assets/icons/chevdown2.svg" alt=""/></a>
     </header>
 
     <main id="main">
@@ -133,46 +134,47 @@
             </article>
         </section>
         <section id="timeline">
+            <h2>Order of Battle</h2>
             <article>
-                <h2>Order of Battle</h2>
+                <h3>Animations</h3>
                 <video loop muted autoplay src="assets/videos/1.mp4"></video>
                 <video loop muted autoplay src="assets/videos/2.mp4"></video>
             </article>
             <article>
                 <h4>Timeline of the Battle of Midway, according to William Koenig.</h4>
                 <h5>3rd June 1942</h5>
-                <p><img src="assets/flags/us.png" class="icon"/><b>09:00 :</b> PBY spots the Occupation Force 500 nautical miles west south-west of Midway, mistakenly reporting this group as the Main Force. </p>
-                <p><img src="assets/flags/us.png" class="icon"/><b>12:30 :</b> Nine B-17s take off for the first of multiple attacks.</p> 
-                <p><img src="assets/flags/us.png" class="icon"/><b>15:30 :</b> Later they find Tanaka's transport group and, under heavy AA fire, drop their bombs. No hits are scored.</p>
+                <p><img src="assets/flags/us.png" class="icon" alt=""/><b>09:00 :</b> PBY spots the Occupation Force 500 nautical miles west south-west of Midway, mistakenly reporting this group as the Main Force. </p>
+                <p><img src="assets/flags/us.png" class="icon" alt=""/><b>12:30 :</b> Nine B-17s take off for the first of multiple attacks.</p> 
+                <p><img src="assets/flags/us.png" class="icon" alt=""/><b>15:30 :</b> Later they find Tanaka's transport group and, under heavy AA fire, drop their bombs. No hits are scored.</p>
                 <h5>4th June 1942</h5>
-                <p><img src="assets/flags/us.png" class="icon"/><b>01:00 :</b> The next morning a PBY scores a torpedo hit on the <i>Akebono Maru</i>, the only successful USN aerial torpedo hit of the battle.</p>
-                <p><img src="assets/flags/japan.png" class="icon"/><b>04:30 :</b> Nagumo launches a strike of 36 Aichi D3As, 36 Nakajima B5Ns and 36 A6M2s to attack Midway, and launches 8 search aircraft from Tone. Simultaneously, 10 planes from USS Yorktown begin searching for the Japanese ships.</p>
-                <p><img src="assets/flags/us.png" class="icon"/><b>05:34 :</b> A PBY Catalina from Midway spots the Japanese Carriers.</p>
-                <p><img src="assets/flags/us.png" class="icon"/><b>06:10 :</b> A few Avengers and B-26s attack the IJN Carriers</p>
-                <p><img src="assets/flags/japan.png" class="icon"/><b>06:20 :</b> Japanese carrier aircraft bombard Midway. Six F4Fs and 20 F2As along with ground AA shoot down a number of the Japanese planes, although they suffer heavy losses.</p>
-                <p><img src="assets/flags/us.png" class="icon"/><b>07:50 :</b> 67 SBDs dive bombers, 29 torpedo bombers, and 20 F4F Wildcats take off from USS Hornet and USS Enterprise.</p>
-                <p><img src="assets/flags/us.png" class="icon"/><b>07:55 :</b> 16 dive bombers from the Midway Islands attack the carriers</p>
-                <p><img src="assets/flags/us.png" class="icon"/><b>08:10 :</b> 17 B-17s from Midway attack</p>
-                <p><img src="assets/flags/us.png" class="icon"/><b>08:20 :</b> 11 bombers from Midway attack</p>
-                <p><img src="assets/flags/us.png" class="icon"/><b>09:06 :</b> 12 torpedo bombers, 17 dive bombers and 6 Wildcats take off from USS Yorktown.</p>
-                <p><img src="assets/flags/us.png" class="icon"/><b>09:25 :</b> 15 torpedo bombers from Hornet attack</p>
-                <p><img src="assets/flags/us.png" class="icon"/><b>09:30 :</b> 14 torpedo bombers from Enterprise attack</p>
-                <p><img src="assets/flags/us.png" class="icon"/><b>10:00 :</b> 12 torpedo bombers from Yorktown attack</p>
-                <p><img src="assets/flags/us.png" class="icon"/><b>10:25 : 47 dive bombers from the US Carriers attack the Kidou Butai, setting Akagi, Kaga and Soryuu ablaze</b></p>         
-                <p><img src="assets/flags/japan.png" class="icon"/><b>11:00 :</b> 18 Aichi D3As and 6 A6M2s take off from Hiryuu</p>       
-                <p><img src="assets/flags/us.png" class="icon"/><b>11:30 :</b> 10 planes from Yorktown take off to search for the remaining Japanese ships</p>
-                <p><img src="assets/flags/japan.png" class="icon"/><b>12:05 :</b> Hiryuu's aircraft attack Yorktown</p>
-                <p><img src="assets/flags/us.png" class="icon"/><b>13:30 :</b> Hiryuu is spotted by Yorktown's planes; 24 dive bombers take off from Enterprise against Hiryuu</p>
-                <p><img src="assets/flags/japan.png" class="icon"/><b>13:31 :</b> 10 B5Ns and 6 A6M2s take off from Hiryuu</p>
-                <p><img src="assets/flags/us.png" class="icon"/><b>13:40 :</b> Yorktown is partially repaired, now making 18 knots</p>
-                <p><img src="assets/flags/japan.png" class="icon"/><b>14:30 :</b> Second attack on Yorktown</p>
-                <p><img src="assets/flags/us.png" class="icon"/><b>15:00 : Yorktown is abandoned</b></p>
-                <p><img src="assets/flags/japan.png" class="icon"/><b>16:10 : Soryuu is scuttled</b></p>
-                <p><img src="assets/flags/us.png" class="icon"/><b>17:00 :</b> Enterprise's carrier aircraft attack Hiryuu</p>
-                <p><img src="assets/flags/japan.png" class="icon"/><b>19:25 : Kaga is scutted</b></p>
+                <p><img src="assets/flags/us.png" class="icon" alt=""/><b>01:00 :</b> The next morning a PBY scores a torpedo hit on the <i>Akebono Maru</i>, the only successful USN aerial torpedo hit of the battle.</p>
+                <p><img src="assets/flags/japan.png" class="icon" alt=""/><b>04:30 :</b> Nagumo launches a strike of 36 Aichi D3As, 36 Nakajima B5Ns and 36 A6M2s to attack Midway, and launches 8 search aircraft from Tone. Simultaneously, 10 planes from USS Yorktown begin searching for the Japanese ships.</p>
+                <p><img src="assets/flags/us.png" class="icon" alt=""/><b>05:34 :</b> A PBY Catalina from Midway spots the Japanese Carriers.</p>
+                <p><img src="assets/flags/us.png" class="icon" alt=""/><b>06:10 :</b> A few Avengers and B-26s attack the IJN Carriers</p>
+                <p><img src="assets/flags/japan.png" class="icon" alt=""/><b>06:20 :</b> Japanese carrier aircraft bombard Midway. Six F4Fs and 20 F2As along with ground AA shoot down a number of the Japanese planes, although they suffer heavy losses.</p>
+                <p><img src="assets/flags/us.png" class="icon" alt=""/><b>07:50 :</b> 67 SBDs dive bombers, 29 torpedo bombers, and 20 F4F Wildcats take off from USS Hornet and USS Enterprise.</p>
+                <p><img src="assets/flags/us.png" class="icon" alt=""/><b>07:55 :</b> 16 dive bombers from the Midway Islands attack the carriers</p>
+                <p><img src="assets/flags/us.png" class="icon" alt=""/><b>08:10 :</b> 17 B-17s from Midway attack</p>
+                <p><img src="assets/flags/us.png" class="icon" alt=""/><b>08:20 :</b> 11 bombers from Midway attack</p>
+                <p><img src="assets/flags/us.png" class="icon" alt=""/><b>09:06 :</b> 12 torpedo bombers, 17 dive bombers and 6 Wildcats take off from USS Yorktown.</p>
+                <p><img src="assets/flags/us.png" class="icon" alt=""/><b>09:25 :</b> 15 torpedo bombers from Hornet attack</p>
+                <p><img src="assets/flags/us.png" class="icon" alt=""/><b>09:30 :</b> 14 torpedo bombers from Enterprise attack</p>
+                <p><img src="assets/flags/us.png" class="icon" alt=""/><b>10:00 :</b> 12 torpedo bombers from Yorktown attack</p>
+                <p><img src="assets/flags/us.png" class="icon" alt=""/><b>10:25 : 47 dive bombers from the US Carriers attack the Kidou Butai, setting Akagi, Kaga and Soryuu ablaze</b></p>         
+                <p><img src="assets/flags/japan.png" class="icon" alt=""/><b>11:00 :</b> 18 Aichi D3As and 6 A6M2s take off from Hiryuu</p>       
+                <p><img src="assets/flags/us.png" class="icon" alt=""/><b>11:30 :</b> 10 planes from Yorktown take off to search for the remaining Japanese ships</p>
+                <p><img src="assets/flags/japan.png" class="icon" alt=""/><b>12:05 :</b> Hiryuu's aircraft attack Yorktown</p>
+                <p><img src="assets/flags/us.png" class="icon" alt=""/><b>13:30 :</b> Hiryuu is spotted by Yorktown's planes; 24 dive bombers take off from Enterprise against Hiryuu</p>
+                <p><img src="assets/flags/japan.png" class="icon" alt=""/><b>13:31 :</b> 10 B5Ns and 6 A6M2s take off from Hiryuu</p>
+                <p><img src="assets/flags/us.png" class="icon" alt=""/><b>13:40 :</b> Yorktown is partially repaired, now making 18 knots</p>
+                <p><img src="assets/flags/japan.png" class="icon" alt=""/><b>14:30 :</b> Second attack on Yorktown</p>
+                <p><img src="assets/flags/us.png" class="icon" alt=""/><b>15:00 : Yorktown is abandoned</b></p>
+                <p><img src="assets/flags/japan.png" class="icon" alt=""/><b>16:10 : Soryuu is scuttled</b></p>
+                <p><img src="assets/flags/us.png" class="icon" alt=""/><b>17:00 :</b> Enterprise's carrier aircraft attack Hiryuu</p>
+                <p><img src="assets/flags/japan.png" class="icon" alt=""/><b>19:25 : Kaga is scutted</b></p>
                 <h5>5th June 1942</h5>
-                <p><img src="assets/flags/japan.png" class="icon"/><b>05:00 : Akagi is scuttled</b></p>
-                <p><img src="assets/flags/japan.png" class="icon"/><b>09:00 : Hiryuu is scuttled</b></p>
+                <p><img src="assets/flags/japan.png" class="icon" alt=""/><b>05:00 : Akagi is scuttled</b></p>
+                <p><img src="assets/flags/japan.png" class="icon" alt=""/><b>09:00 : Hiryuu is scuttled</b></p>
             </article>
         </section>
     </main>

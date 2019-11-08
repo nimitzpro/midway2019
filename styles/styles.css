@@ -206,6 +206,13 @@ section{
     flex-wrap:wrap;
     align-items:center;
     justify-content:space-evenly;
+    transition:0.5s all ease;
+}
+section:hover{
+    background-color:rgba(210, 210, 210, 1);
+}
+#gallery:hover{
+    background-color:rgba(170, 170, 170, 0.75);
 }
 section:last-of-type{
     border-bottom:0.2em double black;
@@ -248,59 +255,66 @@ footer{
 }
 @media screen and (min-width:1281px){
     ul li a{
-        padding: 0.5rem 1.5rem;
+        padding: 0.5em 1.5em;
     }
     ul li{
-        margin:1em 1.5em;
+        margin:2em 1.5em;
     }
 }
 @media screen and (max-width:1280px){
     #hmain{
         padding : 0 2em;
     }
-    ul li a{
+    nav ul li a{
         padding: 0.5em 1em;
     }
-    ul li{
-        margin: 0.5em 0.5em;
+    nav ul li{
+        margin: 2em 0.5em;
     }
 }
 @media screen and (max-width:1000px){
+    body{
+        font-size:10px;
+    }
     footer *,nav ul li{
         flex-basis:100%;
+        font-size:1.15em;
     }
-    nav ul li{
-        margin:auto 0;
+    #hmain{
+        padding:0.5em 0;
+        width:100%;
+        margin: 0 0;
+    }
+    #hmain nav ul li{
+        margin:1em 0;
     }
     #vid{
         height:100%;
         width:auto;
     }
     header,main,footer{
-        font-size:1.35em;
+        font-size:1.1em;
     }
     /* video{ 
         height:100%;
         width:auto;
         margin-left:-50%;
     } */
-    header{
+    /* header{
         padding: 0 0;
-    }
-    #hmain{
-        padding: 0 0;
-    }
+    } */
     section{
         margin:auto 0;
+        background-color:rgba(210, 210, 210, 1);
+    }
+    #gallery{
+        background-color:rgba(170, 170, 170, 0.75);
     }
     figcaption{
         margin:0 0;
     }
-    nav ul li{
-        margin: 0.25em 0;
-    }
-    nav ul li a{
-        padding: 1em 0;
+    #hmain ul li a{
+        padding: 0.5em 0;
     }
     main section *, main #gallery figure{
         flex-basis:95%;

@@ -104,7 +104,7 @@ article li > ul > li:before {
 #timeline article + article{
     border:0.1em solid black;
     flex:1;
-    background-color:rgba(88, 0, 0, 0.4);
+    background-color:rgba(204, 99, 99, 0.7);
     padding:1em 1em;
 }
 
@@ -119,13 +119,15 @@ b,h3{
     font-family: CarroisGothicSC;
 }
 @media screen and (max-width:1000px){
+    #timeline *{
+        font-size:1.15em;
+    }
     #timeline article, #timeline article + article{
         flex-basis:95%;
         margin:0;
         border:none;
     }
     #forces article{
-        margin:0;
         flex-basis:95%;
     }
     #forces article h3{
@@ -134,5 +136,11 @@ b,h3{
     }
     article ul{
         list-style-type: none;
+    }
+    article ul > li{
+        margin:0 0 0 0.5em;
+    }
+    article > ul > li{
+        margin-top:0.5em;
     }
 }
