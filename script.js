@@ -91,9 +91,6 @@ function timer2(){
     amins = (audio.duration / 60 | 0).toString();
     asecs = (audio.duration % 60 | 0).toString();
     mins = audio.currentTime / 60 | 0;
-    if(mins.toString().length < 2){
-        mins = "0"+(audio.currentTime / 60 | 0).toString();
-    }
     secs = audio.currentTime % 60 | 0;
     if(secs.toString().length < 2){
         secs = "0"+(audio.currentTime % 60 | 0).toString(); 
