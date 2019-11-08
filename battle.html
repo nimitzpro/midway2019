@@ -47,6 +47,20 @@
         <section id="forces">
             <h2>Force Composition</h2>
             <article>
+                <h3>Commanders</h3>
+                <ul>
+                    <li>Chester W. Nimitz</li>
+                    <li>Frank Jack Fletcher</li>
+                    <li>Raymond A. Spruance</li>
+                </ul>
+                <ul>
+                    <li>Yamamoto Isoroku</li>
+                    <li>Kondou Nobutake</li>
+                    <li>Nagumo Chuuichi</li>
+                    <li>Yamaguchi Tamon</li>
+                </ul>
+            </article>
+            <article>
                 <h3>Units Involved</h3>
                 <ul>
                     <li>Pacific Fleet
@@ -135,12 +149,8 @@
         </section>
         <section id="timeline">
             <h2>Order of Battle</h2>
-            <article>
-                <h3>Animations</h3>
-                <video loop muted autoplay src="assets/videos/1.mp4"></video>
-                <video loop muted autoplay src="assets/videos/2.mp4"></video>
-            </article>
-            <article>
+            <button id="left" onClick="changeLeft()" onmouseover="left()" onmouseout="leftout()"><img src="assets/icons/chevdown.svg" id="leftimg" alt=""/><img src="assets/icons/chevdown2.svg" id="leftimg2" alt=""/></button>
+            <article id="i1">
                 <h4>Timeline of the Battle of Midway, according to William Koenig.</h4>
                 <h5>3rd June 1942</h5>
                 <p><img src="assets/flags/us.png" class="icon" alt=""/><b>09:00 :</b> PBY spots the Occupation Force 500 nautical miles west south-west of Midway, mistakenly reporting this group as the Main Force. </p>
@@ -176,6 +186,13 @@
                 <p><img src="assets/flags/japan.png" class="icon" alt=""/><b>05:00 : Akagi is scuttled</b></p>
                 <p><img src="assets/flags/japan.png" class="icon" alt=""/><b>09:00 : Hiryuu is scuttled</b></p>
             </article>
+            <article id="i2">
+                    <h3>Animations</h3>
+                    <video loop muted autoplay src="assets/videos/1.mp4"></video>
+                    <video loop muted autoplay src="assets/videos/2.mp4"></video>
+            </article>
+            <button id="right" onClick="changeRight()" onmouseover="right()" onmouseout="rightout()"><img src="assets/icons/chevdown.svg" id="rightimg" alt=""/><img src="assets/icons/chevdown2.svg" id="rightimg2" alt=""/></button>
+            <h2 id="page"></h2>
         </section>
     </main>
     <footer>
@@ -183,6 +200,7 @@
         <p><a href="https://github.com/nimitzpro">Click here</a> to check out my other coding projects</p>
     </footer>
     <script src="script.js"></script>
+    <script src="battle.js"></script>
 </body>
 
 </html>

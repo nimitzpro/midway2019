@@ -4,18 +4,11 @@
 #hmain:hover #battle,#battle:hover{
     color:white;
 }
-section:nth-child(2){
-    background-color:rgba(228, 228, 228, 0.75);
-}
 section h2, section p{
     flex-basis: 100%;
 }
 h4,h5{
     color:rgb(70, 9, 88);
-}
-h5{
-    margin:0.75em 0 0.35em 0;
-    font-family:CarroisGothicSC;
 }
 section h3{
     color:rgb(81,9,9);
@@ -60,10 +53,11 @@ article>ul{
     text-align: left;
     font-family:CarroisGothicSC;
     font-weight: 1000;
-    list-style-type: square;
+    list-style-type: none;
     background-size: cover;
     background-repeat:no-repeat;
     background-position-x: right;
+    padding-bottom:1em;
 }
 article ul + ul{
     border-left:0.1em solid black;
@@ -71,9 +65,6 @@ article ul + ul{
     background-size: cover;
     background-repeat:no-repeat;
     background-position-x: left;
-}
-#timeline p{
-    text-align:left;
 }
 article li > ul{
     text-align: left;
@@ -86,28 +77,35 @@ li>ul li{
 article li > ul > li:before {
     content: "- ";  
   }
-#timeline{
-    float:right;
-}
 #timeline p{
     font-size:0.8em;
 }
 #timeline{
     display:flex;
     flex-wrap:wrap;
-    justify-content: space-evenly;
+    align-items: stretch;
+    justify-content: center;
+}
+#timeline h2{
+    flex-basis: 100%;
+}
+#timeline h5{
+    margin-left:5em;
+    font-family:CarroisGothicSC;
+    margin:1em 0 0.45em 3em;
 }
 #timeline article{
-    flex:1.35;
-    margin-left:1em;
-}
-#timeline article + article{
     border:0.1em solid black;
-    flex:1;
     background-color:rgba(204, 99, 99, 0.7);
     padding:1em 1em;
+    width:80%;
+    text-align:left;
+    flex:8;
+    display:none;
 }
-
+#i1{
+    display:block;
+}
 .icon{
     height:0.9em;
     display:inline-block;
@@ -115,15 +113,43 @@ article li > ul > li:before {
     padding:0;
     border:none;
 }
+#left,#right{
+    flex:1;
+    border:0;
+    background:gray;
+    transition:0.5s all ease;
+    margin:0;
+}
+#left:hover,#right:hover{
+    background-color:lightslategray;
+}
+#left img{
+    transform: rotate(90deg);
+    width:100%;
+    border:0;
+}
+#right img{
+    transform: rotate(270deg);
+    width:100%;
+    border:0;
+}
+#leftimg2,#rightimg2{
+    display:none;
+}
 b,h3{
     font-family: CarroisGothicSC;
+}
+article ul > li{
+    margin:0 0 0 0.5em;
+}
+article > ul > li{
+    margin-top:0.5em;
 }
 @media screen and (max-width:1000px){
     #timeline *{
         font-size:1.15em;
     }
-    #timeline article, #timeline article + article{
-        flex-basis:95%;
+    #timeline article{
         margin:0;
         border:none;
     }
@@ -133,14 +159,5 @@ b,h3{
     #forces article h3{
         padding:1em 0;
         margin-top:0;
-    }
-    article ul{
-        list-style-type: none;
-    }
-    article ul > li{
-        margin:0 0 0 0.5em;
-    }
-    article > ul > li{
-        margin-top:0.5em;
     }
 }
