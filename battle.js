@@ -29,15 +29,19 @@ window.onload = () => {
 };
 
 function changeRight(){
-    j = i;
-    i++;
+    if(i != 2){
+        j = i;
+        i++;
+    }
     document.getElementById(y+i.toString()).style.display = "block";
     document.getElementById(y+j.toString()).style.display = "none";
     document.getElementById("page").innerHTML = "Page " + i.toString() + " out of 2";
 }
 function changeLeft(){
-    j = i;
-    i--;
+    if(i != 1){
+        j = i;
+        i--;
+    }
     document.getElementById(y+i.toString()).style.display = "block";
     document.getElementById(y+j.toString()).style.display = "none";
     document.getElementById("page").innerHTML = "Page " + i.toString() + " out of 2";

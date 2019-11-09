@@ -87,7 +87,10 @@ article li > ul > li:before {
     justify-content: center;
 }
 #timeline h2{
-    flex-basis: 100%;
+    flex:1;
+}
+h2#page{
+    flex-basis:100%;
 }
 #timeline h5{
     margin-left:5em;
@@ -100,7 +103,7 @@ article li > ul > li:before {
     padding:1em 1em;
     width:80%;
     text-align:left;
-    flex:8;
+    flex-basis: 100%;
     display:none;
 }
 #i1{
@@ -113,14 +116,23 @@ article li > ul > li:before {
     padding:0;
     border:none;
 }
+#left img,#right img{
+    height:2em;
+}
+#left,#right{
+    flex:0.5;
+}
 #left,#right{
     flex:1;
     border:0;
+    padding:0.25em 0;
+    background-color:transparent;
+}
+article + #left,#left + #right{
     background:gray;
     transition:0.5s all ease;
-    margin:0;
 }
-#left:hover,#right:hover{
+article + #left:hover,#left + #right:hover{
     background-color:lightslategray;
 }
 #left img{
