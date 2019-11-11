@@ -38,8 +38,7 @@ function changeRight(){
     document.getElementById("page").innerHTML = "Page " + i.toString() + " out of 8";
 }
 function changeLeft(){
-    if(i != 1){
-        j = i;
+    if(i == 1){
         i--;
     }
     document.getElementById(y+i.toString()).style.display = "block";
@@ -76,10 +75,10 @@ function handleTouchMove(evt) {
 
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
         if ( xDiff > 0 ) {
-            changeLeft()
-        } else {
-            /* right swipe */
             changeRight()
+        } else {
+            changeLeft()
+            /* right swipe */
         }                       
     } else {
         if ( yDiff > 0 ) {
