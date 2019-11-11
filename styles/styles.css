@@ -257,9 +257,9 @@ footer{
     ul li a{
         padding: 0.5em 1.5em;
     }
-    ul li{
+    /* ul li{
         margin:2em 1.5em;
-    }
+    } */
 }
 @media screen and (max-width:1280px){
     #hmain{

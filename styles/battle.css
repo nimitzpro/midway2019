@@ -89,9 +89,6 @@ article li > ul > li:before {
 #timeline h2{
     flex:1;
 }
-h2#page{
-    flex-basis:100%;
-}
 #timeline h5{
     margin-left:5em;
     font-family:CarroisGothicSC;
@@ -118,9 +115,8 @@ h2#page{
 }
 #left img,#right img{
     height:2em;
-}
-#left,#right{
-    flex:0.5;
+    width:100%;
+    border:0;
 }
 #left,#right{
     flex:1;
@@ -128,24 +124,13 @@ h2#page{
     padding:0.25em 0;
     background-color:transparent;
 }
-article + #left,#left + #right{
-    background:gray;
-    transition:0.5s all ease;
-}
-article + #left:hover,#left + #right:hover{
-    background-color:lightslategray;
-}
 #left img{
     transform: rotate(90deg);
-    width:100%;
-    border:0;
 }
 #right img{
     transform: rotate(270deg);
-    width:100%;
-    border:0;
 }
-#leftimg2,#rightimg2{
+#leftimg2,#rightimg2,#leftimg4,#rightimg4{
     display:none;
 }
 b,h3{
