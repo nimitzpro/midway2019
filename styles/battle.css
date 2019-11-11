@@ -89,6 +89,9 @@ article li > ul > li:before {
 #timeline h2{
     flex:1;
 }
+#timeline>h2:first-child{
+    flex-basis:100%;
+}
 #timeline h5{
     margin-left:5em;
     font-family:CarroisGothicSC;

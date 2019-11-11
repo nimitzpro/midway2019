@@ -92,3 +92,11 @@ function handleTouchMove(evt) {
     xDown = null;
     yDown = null;                                             
 };
+document.addEventListener('keydown',(x)=>{
+    if(x.keyCode == 37 || x.keyCode == 8){
+        changeLeft();
+    }
+    else if(x.keyCode == 39 || x.keyCode == 32 || x.keyCode == 13){
+        changeRight();
+    }
+});
