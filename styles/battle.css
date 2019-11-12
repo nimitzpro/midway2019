@@ -149,12 +149,31 @@ article ul > li{
 article > ul > li{
     margin-top:0.5em;
 }
+article{
+    display:flex;
+    flex-wrap:wrap;
+}
+article h3{
+    flex-basis:100%;
+}
+article video{
+    flex:1;
+    min-width:40%;
+    margin:0.45em;
+}
+article p{
+    flex:1;
+    min-width:40%;
+}
 @media screen and (max-width:1000px){
     #timeline *{
         font-size:1.15em;
     }
     #timeline article{
         margin:0;
+    }
+    article video{
+        flex-basis:100%;
     }
     #forces article{
         flex-basis:95%;

@@ -33,17 +33,26 @@ function changeRight(){
         j = i;
         i++;
     }
-    document.getElementById(y+i.toString()).style.display = "block";
+    document.getElementById(y+i.toString()).style.display = "flex";
     document.getElementById(y+j.toString()).style.display = "none";
     document.getElementById("page").innerHTML = "Page " + i.toString() + " out of 8";
 }
 function changeLeft(){
-    if(i != 1){
-        j = i;
-        i--;
-        document.getElementById(y+i.toString()).style.display = "block";
+    if(i > 1){
+        if(i == 2){
+            j = i;
+            i--;
+            document.getElementById(y+i.toString()).style.display = "block";
+            document.getElementById(y+j.toString()).style.display = "none";
+            document.getElementById("page").innerHTML = "Page " + i.toString() + " out of 8";
+        }
+        else{
+            j = i;
+            i--;
+        document.getElementById(y+i.toString()).style.display = "flex";
         document.getElementById(y+j.toString()).style.display = "none";
         document.getElementById("page").innerHTML = "Page " + i.toString() + " out of 8";
+        }
     }
 }
 
