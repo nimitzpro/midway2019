@@ -70,6 +70,9 @@ h2{
 #sabaton a:hover{
     text-decoration: underline;
 }
+#sabaton p{
+    margin:0 0;
+}
 #hidden{
     border-left:0.5em solid black;
     border-bottom:0.5em solid black;
@@ -84,7 +87,7 @@ h2{
     float:left;
 }
 .toggle, #sabaton #vidclick{
-    margin-right:1em;
+    margin:0em 0.35em 0.35em 0.1em;
 }
 #hidden{
     display:none;
