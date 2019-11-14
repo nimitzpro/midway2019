@@ -152,6 +152,8 @@ article > ul > li{
 article{
     display:flex;
     flex-wrap:wrap;
+    align-items:center;
+    align-content:center;
 }
 article h3{
     flex-basis:100%;
