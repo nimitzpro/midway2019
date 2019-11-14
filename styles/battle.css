@@ -109,6 +109,8 @@ article li > ul > li:before {
     text-align:left;
     flex-basis: 100%;
     display:none;
+    align-items:center;
+    align-content:center;
 }
 #i1{
     display:block;
@@ -152,8 +154,6 @@ article > ul > li{
 article{
     display:flex;
     flex-wrap:wrap;
-    align-items:center;
-    align-content:center;
 }
 article h3{
     flex-basis:100%;
