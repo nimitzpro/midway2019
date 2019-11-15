@@ -124,7 +124,7 @@ a, button{
 }
 button{
     border:none;
-    color:rgb(300, 4, 4);
+    color:crimson;
     font-size:1.25em;
     margin-bottom:0.5em;
     background-color:black;
@@ -214,9 +214,6 @@ section{
 section:hover{
     background-color:rgba(210, 210, 210, 1);
 }
-#gallery:hover{
-    background-color:rgba(170, 170, 170, 0.75);
-}
 section:last-of-type{
     border-bottom:0.2em double black;
 }
@@ -245,6 +242,43 @@ footer{
     display:flex;
     justify-content: space-evenly;
     flex-wrap:wrap;
+    align-items: baseline;
+}
+footer *{
+    flex:1;
+}
+footer button{
+    font-size:inherit;
+    padding:0 0;
+    flex:1;
+}
+#credits{
+    font-size:1em;
+    display:none;
+    overflow: hidden;
+    padding:5vh 1em 0 1em;
+    flex-basis:100%;
+    background-color:black;
+    transition:none;
+    border-top: 0.1em dashed lightseagreen;
+}
+#credits *{
+    display:block;
+    text-align:center;
+    color:lightseagreen;
+}
+#credits p{
+    margin:1em 0;
+    position:relative;
+    transform:translateY(500%);
+    animation:scrollup 5s forwards;
+}
+#c2{
+    display:none;
+}
+@keyframes scrollup{
+    from{transform:translateY(500%);}
+    to{transform: translateY(-100%);}
 }
 #colours{
     animation:kek 10s infinite;
@@ -282,7 +316,7 @@ footer{
     body{
         font-size:10px;
     }
-    footer *,nav ul li{
+    footer *,footer button,nav ul li{
         flex-basis:100%;
         font-size:1.15em;
     }
@@ -313,9 +347,6 @@ footer{
         margin:auto 0;
         background-color:rgba(210, 210, 210, 1);
     }
-    #gallery{
-        background-color:rgba(170, 170, 170, 0.75);
-    }
     figcaption{
         margin:0 0;
     }
@@ -330,6 +361,12 @@ footer{
         width:auto;
         margin-left:-25%;
     } */
+    #c1{
+        display:none;
+    }
+    #c2{
+        display:inline-block;
+    }
 }
 #audiobutton{
     width:2em;

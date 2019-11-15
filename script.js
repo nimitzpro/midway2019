@@ -135,3 +135,14 @@ cont.addEventListener("mouseleave",()=>{
     // musichover.style.marginLeft = 0
     x = 0
 });
+
+credsect = document.getElementById('credits');
+function credits(){
+    if(credsect.style.display == 'block'){
+        credsect.style.display = 'none';
+    }
+    else{
+        credsect.style.display = 'block';
+        location.href = '#credits';
+    }
+}
