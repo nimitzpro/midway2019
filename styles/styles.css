@@ -236,13 +236,16 @@ footer{
     color:royalblue;
     width:100%;
     text-align:center;
-    padding:2em 0 0 0 ;
     font-weight: bold;
     font-size:1.25em;
     display:flex;
     justify-content: space-evenly;
     flex-wrap:wrap;
     align-items: baseline;
+    padding:1.5em 0 1.5em 0 ;
+}
+footer>p{
+    margin: 0 0;
 }
 footer *{
     flex:1;
@@ -256,15 +259,16 @@ footer button{
     font-size:1em;
     display:none;
     overflow: hidden;
-    padding:5vh 1em 0 1em;
+    padding:2em 1em 0 1em;
     flex-basis:100%;
     background-color:black;
     transition:none;
     border-top: 0.1em dashed lightseagreen;
+    order:4;
 }
-#credits *{
+#credits>*{
     display:block;
-    text-align:center;
+    /* text-align:center; */
     color:lightseagreen;
 }
 #credits p{
@@ -273,8 +277,12 @@ footer button{
     transform:translateY(500%);
     animation:scrollup 5s forwards;
 }
-#c2{
-    display:none;
+#credits a{
+    display:inline;
+    color:crimson;
+}
+#credits span{
+    display:inline-block;
 }
 @keyframes scrollup{
     from{transform:translateY(500%);}
@@ -316,9 +324,12 @@ footer button{
     body{
         font-size:10px;
     }
-    footer *,footer button,nav ul li{
+    footer>*,footer>button,nav ul li{
         flex-basis:100%;
         font-size:1.15em;
+    }
+    #credits{
+
     }
     #hmain{
         padding:0.5em 0;
@@ -362,10 +373,7 @@ footer button{
         margin-left:-25%;
     } */
     #c1{
-        display:none;
-    }
-    #c2{
-        display:inline-block;
+        order:3;
     }
 }
 #audiobutton{

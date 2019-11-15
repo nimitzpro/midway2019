@@ -136,13 +136,16 @@ cont.addEventListener("mouseleave",()=>{
     x = 0
 });
 
+credbutton = document.getElementById("c1");
 credsect = document.getElementById('credits');
 function credits(){
     if(credsect.style.display == 'block'){
         credsect.style.display = 'none';
+        credbutton.innerHTML = "Credits";
     }
     else{
         credsect.style.display = 'block';
-        location.href = '#credits';
+        credsect.scrollIntoView({behavior:'smooth', block:'start'});
+        credbutton.innerHTML = "Hide Credits";
     }
 }
