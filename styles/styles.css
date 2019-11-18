@@ -263,22 +263,21 @@ footer button{
     flex-basis:100%;
     background-color:black;
     transition:none;
-    border-top: 0.1em dashed lightseagreen;
+    border-top: 0.1em dashed royalblue;
     order:4;
 }
 #credits>*{
     display:block;
     /* text-align:center; */
-    color:lightseagreen;
 }
-#credits p{
+#credits>p{
     margin:1em 0;
-    position:relative;
     transform:translateY(500%);
     animation:scrollup 5s forwards;
 }
 #credits a{
-    display:inline;
+    position:relative;
+    display:inline-block;
     color:crimson;
 }
 #credits span{
@@ -286,7 +285,7 @@ footer button{
 }
 @keyframes scrollup{
     from{transform:translateY(500%);}
-    to{transform: translateY(-100%);}
+    to{transform: translateY(0%);}
 }
 #colours{
     animation:kek 10s infinite;
@@ -327,9 +326,6 @@ footer button{
     footer>*,footer>button,nav ul li{
         flex-basis:100%;
         font-size:1.15em;
-    }
-    #credits{
-
     }
     #hmain{
         padding:0.5em 0;
