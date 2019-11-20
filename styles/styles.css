@@ -15,6 +15,9 @@
     font-family:JA3017;
     src:url("../fonts/ja3017.ttf");
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family:CarroisGothic,Verdana, Geneva, Tahoma, sans-serif;
     font-size:15px;

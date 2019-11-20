@@ -21,10 +21,10 @@ function buttonout(){
     down1.style.display = "block";
     down2.style.display = "none";
 }
-function scrollDown() {
-    var main = document.getElementById("main");
-    main.scrollIntoView({behavior:'smooth', block:'start'});
-  }
+// function scrollDown() {
+//     var main = document.getElementById("main");
+//     main.scrollIntoView({behavior:'smooth', block:'start'});
+//   }
 
 let top1 = document.getElementById("top1");
 let top2 = document.getElementById("top2");
@@ -36,10 +36,10 @@ function buttonout2(){
     top1.style.display = "block";
     top2.style.display = "none";
 }
-function scrollUp() {
-    var top = document.getElementById("top");
-    top.scrollIntoView({behavior:'smooth', block:'nearest'});
-  }
+// function scrollUp() {
+//     var top = document.getElementById("top");
+//     top.scrollIntoView({behavior:'smooth', block:'nearest'});
+//   }
 
 let hidden = document.getElementById("hidden");
 let sabaton = document.getElementById("sabaton");
