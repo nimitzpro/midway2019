@@ -220,7 +220,7 @@ section:hover{
 section:last-of-type{
     border-bottom:0.2em double black;
 }
-section img{
+section img,article video{
     border:0.2em double;
 }
 section h2{
@@ -274,7 +274,7 @@ footer button{
 }
 #credits>div{
     transform:translateY(200%);
-    animation:scrollup 5s forwards;
+    animation:scrollup 1.5s forwards ease -0.5s;
 }
 #credits p{
     margin:1em 0;

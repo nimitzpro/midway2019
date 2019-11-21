@@ -4,7 +4,7 @@
 #hmain:hover #battle,#battle:hover{
     color:white;
 }
-section h2, section p{
+section p{
     flex-basis: 100%;
 }
 h4,h5{
@@ -81,17 +81,14 @@ article li > ul > li:before {
 #timeline p{
     font-size:0.8em;
 }
+#h2{
+    flex-basis:100%;
+}
 #timeline{
     display:flex;
     flex-wrap:wrap;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
-}
-#timeline h2{
-    flex:1;
-}
-#timeline>h2:first-child{
-    flex-basis:100%;
 }
 #timeline h5{
     margin-left:5em;
@@ -128,9 +125,11 @@ article li > ul > li:before {
     border:0;
 }
 #left,#right{
+    margin-bottom:0;
+    margin-top:0.5em;
     flex:1;
     border:0;
-    padding:0.25em 0;
+    /* padding:0.25em 0; */
     background-color:transparent;
 }
 #left img{
@@ -184,4 +183,74 @@ article p{
         padding:1em 0;
         margin-top:0;
     }
+    #timeline h2,ul#oob li a{
+        font-size:1.75em;
+        padding:0.5em;
+    }
+    #timeline #oob{
+        width:175%;
+        left:-37.5%;
+    }
+    h3#page{
+        flex:3;
+        font-size:1.5em;
+    }
+}
+#timeline h2{
+    display:inline-block;
+    margin: 1em auto;
+    flex-basis:content;
+    color:crimson;
+}
+#oob{
+    display:none;
+    z-index:3;
+    position: absolute;
+    list-style-type: none;
+    flex-direction: column;
+    background-color:rgb(218, 241, 255);
+    /* box-shadow: 0.2em 0.25em; */
+    left: -25%;
+    top: 100%;
+    width: 150%;
+}
+#oob li{
+    display:block;
+    font-size:1rem;
+    flex:1;
+}
+#oob li a{
+    display:block;
+    padding: 0 0;
+    border-top:0.05em solid rgb(81,9,9);
+}
+#oob:nth-last-child(1){
+    border-bottom:0.05em solid rgb(81,9,9);
+}
+#oob a:hover{
+    color:rgb(81,9,9);
+    background-color:rgba(210, 210, 210, 1);
+    border-left:0.1em solid rgb(81,9,9);
+    border-right:0.1em solid rgb(81,9,9);
+    /* border:0.1em solid black; */
+}
+#timeline h2:hover #oob{
+    display:inline-flex;
+}
+#timeline h2:hover{
+    /* text-decoration:underline; */
+    color:rgb(81,9,9);
+}
+section#timeline h2{
+    padding-bottom:0;
+    text-align:center;
+    position:relative;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+#page{
+    border:none;
+    margin-top:0.5em;
+    font-size:2em;
+    flex:1;
 }

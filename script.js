@@ -118,23 +118,23 @@ function skip(x){
     }
 }
 
-let musichover = document.getElementById("musichover");
- var mpoint = Number(musicpoint.style.width) / musiclineW * 100;
- cont.addEventListener("mouseover",(pos)=>{
-    var x = (pos.offsetX / musiclineW) * 100;
-    // x -= mpoint;
-    beforeSkip(x)
-});
-function beforeSkip(x){
-    musichover.style.width = x + "%";
-    // var mpointStr = Number.toString(mpoint);
-    // musichover.style.left = mpointStr + "%";
-}
-cont.addEventListener("mouseleave",()=>{
-    musichover.style.width = 0;
-    // musichover.style.marginLeft = 0
-    x = 0
-});
+// let musichover = document.getElementById("musichover");
+//  var mpoint = Number(musicpoint.style.width) / musiclineW * 100;
+//  cont.addEventListener("mouseover",(pos)=>{
+//     var x = (pos.offsetX / musiclineW) * 100;
+//     // x -= mpoint;
+//     beforeSkip(x)
+// });
+// function beforeSkip(x){
+//     musichover.style.width = x + "%";
+//     // var mpointStr = Number.toString(mpoint);
+//     // musichover.style.left = mpointStr + "%";
+// }
+// cont.addEventListener("mouseleave",()=>{
+//     musichover.style.width = 0;
+//     // musichover.style.marginLeft = 0
+//     x = 0
+// });
 
 credbutton = document.getElementById("c1");
 credsect = document.getElementById('credits');
