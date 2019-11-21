@@ -33,13 +33,19 @@ function changeRight(){
         j = i;
         i++;
     }
-    document.getElementById(y+i.toString()).style.display = "flex";
-    document.getElementById(y+j.toString()).style.display = "none";
+    if(i == 6){
+        document.getElementById(y+i.toString()).style.display = "block";
+        document.getElementById(y+j.toString()).style.display = "none";
+    }
+    else{
+        document.getElementById(y+i.toString()).style.display = "flex";
+        document.getElementById(y+j.toString()).style.display = "none";
+    }
     document.getElementById("page").innerHTML = "Page " + i.toString() + " out of 8";
 }
 function changeLeft(){
     if(i > 1){
-        if(i == 2){
+        if(i == 2 || i == 7){
             j = i;
             i--;
             document.getElementById(y+i.toString()).style.display = "block";
