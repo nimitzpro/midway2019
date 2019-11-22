@@ -254,3 +254,6 @@ section#timeline h2{
     font-size:2em;
     flex:1;
 }
+footer section div{
+    margin:0 0;
+}
