@@ -107,7 +107,7 @@ function changeRight(){
         j = i;
         i++;
     }
-    if(i == 2){
+    if(i == 3){
         document.getElementById(y+i.toString()).style.display = "flex";
         document.getElementById(y+j.toString()).style.display = "none";
     }
