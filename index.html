@@ -15,8 +15,9 @@
     <div id="hidden" style="display:none;"><button class="toggle" onClick="togglePlayer()">Show Player</button></div>
     <div id="sabaton" style="display:block;">
         <button class="toggle" onClick="togglePlayer()">Hide</button>
-        <button onClick="vid()" id="vidclick">Pause Video</button>
-        <a href="https://youtu.be/NuOnQpyP1nc">"Midway" by Sabaton</a>
+        <button onClick="vid()" id="vidclick">Pause Video</button><br />
+        <button onClick="weebify()" id="weebbutton">Weebify</button>
+        <a href="https://youtu.be/NuOnQpyP1nc" id="label">"Midway" by Sabaton</a>
         <div id="audioplayer">
             <audio id="audio" src="assets/midway.mp3"></audio>
             <button id="audiobutton" onClick="audioControl()"><img id="play" style="display:block;" src="assets/icons/play.svg" alt=""/><img id="pause" src="assets/icons/pause.svg" alt=""/></button>
@@ -26,9 +27,9 @@
     </div>
     <header>
         <div id="hmain">
-            <h1>Midway</h1>
+            <h1 id="h1">Midway</h1>
             <nav>
-                <ul>
+                <ul id="ul">
                     <li><a id="index" href="index.html">Home</a></li>
                     <li><a id="battle" href="battle.html">Order of Battle</a></li>
                     <li><a id="results" href="results.html">Results of Midway</a></li>
@@ -125,6 +126,7 @@
             </section>
     </footer>
     <script src="script.js"></script>
+    <script src="weeb.js"></script>
 </body>
 
 </html>

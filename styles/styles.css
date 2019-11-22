@@ -15,6 +15,14 @@
     font-family:JA3017;
     src:url("../fonts/ja3017.ttf");
 }
+@font-face{
+    font-family:Shinto;
+    src:url("../weeb/Shinto.otf");
+}
+@font-face{
+    font-family: AnimeAce;
+    src:url("../weeb/Animeace.ttf");
+}
 html{
     scroll-behavior: smooth;
 }
