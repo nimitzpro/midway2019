@@ -28,17 +28,18 @@ function weebify(){
         isWeeb = true;
     }
     else{
-        vid.setAttribute('src','assets/midwayvid.mp4');
-        aud.setAttribute('src','assets/midway.mp3');
-        audioLabel.innerHTML = "\"Midway\" by sabaton";
-        audioLabel.setAttribute('href','https://youtu.be/NuOnQpyP1nc');
-        weebButton.innerHTML = "Weebify";
-        demoQueryAll.forEach(query => {
-            query.style.fontFamily = "JA3017";
-          });
-        h1.forEach(query =>{
-            query.style.fontFamily = "YFury";
-        });
-        isWeeb = false;
+        // vid.setAttribute('src','assets/midwayvid.mp4');
+        // aud.setAttribute('src','assets/midway.mp3');
+        // audioLabel.innerHTML = "\"Midway\" by sabaton";
+        // audioLabel.setAttribute('href','https://youtu.be/NuOnQpyP1nc');
+        // weebButton.innerHTML = "Weebify";
+        // demoQueryAll.forEach(query => {
+        //     query.style.fontFamily = "JA3017";
+        //   });
+        // h1.forEach(query =>{
+        //     query.style.fontFamily = "YFury";
+        // });
+        // isWeeb = false;
+        location.reload();
     }
 }
